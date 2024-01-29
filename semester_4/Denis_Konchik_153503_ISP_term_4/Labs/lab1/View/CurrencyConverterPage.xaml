@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab1.View.CurrencyConverterPage"
+             xmlns:viewModel="clr-namespace:lab1.ViewModel"
+             xmlns:helper="clr-namespace:lab1.Helpers"
+             xmlns:entities="clr-namespace:lab1.Entities"
+             Title="CurrencyConverter">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helper:CurrencyToStringConverter x:Key="CurrencyToStringConverter" />
+        </ResourceDictionary>
+        
+        <Style x:Key="EntryStyle" TargetType="Entry">
+            <Setter Property="Keyboard" Value="Numeric"/>
+            <Setter Property="ClearButtonVisibility" Value="WhileEditing"/>
+            <Setter Property="MaxLength" Value="14"/>
+            <Setter Property="FontSize" Value="25" />
+            <Setter Property="HorizontalOptions" Value="Fill"/>
+            <Setter Property="VerticalOptions" Value="Fill"/>
+        </Style>
+        <Style TargetType="Picker">
+            <Setter Property="HorizontalOptions" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="Fill"/>
+            <Setter Property="FontSize" Value="25"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <StackLayout Orientation="Vertical" 
+                 x:DataType="viewModel:CurrencyConverterViewModel" Margin="10">
+
+        <Grid ColumnDefinitions="0.5*,*,0.5*">
+            <DatePicker Grid.Column="1"
+                        MinimumDate="{Binding MinDate}"
+                        MaximumDate="{Binding MaxDate}"
+                        Date="{Binding SelectedDate}" 
+                        FontSize="25"
+                        HorizontalOptions="CenterAndExpand"/>
+            
+            <Button Grid.Column="2"
+                    FontFamily="FAFS-900" 
+                    FontSize="25"
+                    Text="{x:Static helper:FontHelper.RotateRight}"
+                    Command="{Binding RefreshDateCommand}"
+                    HorizontalOptions="Start" 
+                    WidthRequest="50" 
+                    HeightRequest="50" />
+        </Grid>
+
+        <Grid ColumnDefinitions="0.65*, 0.35*" RowDefinitions="*, *">
+            
+            <Entry Text="{Binding FirstCurrencyValue, Mode=TwoWay}"
+                   Style="{x:StaticResource EntryStyle}"
+                   Completed="Entry_Completed"
+                   Grid.Column="0" Grid.Row="0"/>
+            
+            <Picker ItemsSource="{Binding Currencies}"
+                    ItemDisplayBinding="{Binding ., Converter={x:StaticResource CurrencyToStringConverter}}"
+                    SelectedItem="{Binding SelectedFirstCurrency}"
+                    Grid.Column="1" Grid.Row="0"/>
+
+            
+            
+            <Entry Text="{Binding SecondCurrencyValue, Mode=TwoWay}"
+                   Style="{x:StaticResource EntryStyle}"
+                   Completed="Entry_Completed"
+                   Grid.Column="0" Grid.Row="1"/>
+
+            <Picker ItemsSource="{Binding Currencies}"
+                    ItemDisplayBinding="{Binding ., Converter={x:StaticResource CurrencyToStringConverter}}"
+                    SelectedItem="{Binding SelectedSecondCurrency}"
+                    Grid.Column="1" Grid.Row="1"/>
+
+        </Grid>
+
+        <CollectionView ItemsSource="{Binding Rates}" Margin="5">
+            <CollectionView.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="15"/>
+                </Style>
+            </CollectionView.Resources>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entities:Rate">
+                    <Grid ColumnDefinitions="0.1*, 0.5*, 0.1*, 0.1*, 0.2*, 0.1*">
+                        <Label Text="{Binding Cur_Scale}" Grid.Column="0"/>
+                        <Label Text="{Binding Cur_Name}" Grid.Column="1"/>
+                        <Label Text="{Binding Cur_Abbreviation}" Grid.Column="2"/>
+                        <Label Text="=" Grid.Column="3" HorizontalOptions="Center"/>
+                        <Label Text="{Binding Cur_OfficialRate}" Grid.Column="4" HorizontalOptions="Start"/>
+                        <Label Text="BYN" Grid.Column="5" HorizontalOptions="End"/>
+                    </Grid>    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+            
+        
+        
+    </StackLayout>
+    
+</ContentPage>

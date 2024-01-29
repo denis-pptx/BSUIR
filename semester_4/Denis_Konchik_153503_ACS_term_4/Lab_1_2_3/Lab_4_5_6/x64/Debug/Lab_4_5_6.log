@@ -1,0 +1,5 @@
+﻿  Lab_4_5_6.cpp
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\Lab_4_5_6\Addition.h(46,21): warning C4566: символ, представленный универсальным именем символа "\u2248", невозможно представить в текущей кодовой странице (1251)
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\Lab_4_5_6\Multiplication.h(58,18): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\Lab_4_5_6\Division.h(60,18): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+  Lab_4_5_6.vcxproj -> D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\x64\Debug\Lab_4_5_6.exe

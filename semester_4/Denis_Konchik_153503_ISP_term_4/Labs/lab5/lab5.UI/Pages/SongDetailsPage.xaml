@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab5.UI.Pages.SongDetailsPage"
+             xmlns:constants="clr-namespace:lab5.UI.Constants"
+             xmlns:viewModels="clr-namespace:lab5.UI.ViewModels"
+             xmlns:entites="clr-namespace:lab5.Domain.Entities;assembly=lab5.Domain"
+             x:DataType="viewModels:SongDetailsViewModel"
+             Title="Song Details">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding EditCommand}" Text="Edit">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="FAFS-900" 
+                                 Glyph="{x:Static constants:FontConstants.Edit}" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical" 
+                     VerticalOptions="Start"
+                     Margin="20">
+
+            <Frame HasShadow="True" Padding="10" Margin="0,0,0,10">
+                <Image Source="{Binding Song.Id, Converter={StaticResource SongIdToImageValueConverter}}"
+                        Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </Frame>
+
+            <Grid ColumnDefinitions="0.35*,0.65*" 
+                    RowDefinitions="*,*,*,*" 
+                    VerticalOptions="Fill">
+
+                <Label Text="Name" Grid.Row="0" Grid.Column="0" />
+                <Label Text="{Binding Song.Name}" StyleClass="Value" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Listenings" Grid.Row="1" Grid.Column="0" />
+                <Label Text="{Binding Song.Listenings}" StyleClass="Value" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Chartplace" Grid.Row="2" Grid.Column="0" />
+                <Label Text="{Binding Song.ChartPlace}" StyleClass="Value" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Musician" Grid.Row="3" Grid.Column="0" />
+                <Label Text="{Binding Song.Musician.Name}" StyleClass="Value" Grid.Row="3" Grid.Column="1"/>
+            </Grid>
+        
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:lab5.UI.ViewModels"
+             x:Class="lab5.UI.Pages.AddSongPage"
+             Title="Add Song">
+
+    <ScrollView>
+        
+        <StackLayout Orientation="Vertical" 
+                     VerticalOptions="Start"
+                     Margin="20"
+                     x:DataType="viewModels:AddSongViewModel">
+
+            <Grid ColumnDefinitions="0.35*,0.65*" 
+                  RowDefinitions="*,*,*,*" 
+                  VerticalOptions="FillAndExpand" RowSpacing="10">
+
+                <Label Text="Name" Grid.Row="0" Grid.Column="0" />
+                <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Listenings" Grid.Row="1" Grid.Column="0" />
+                <Entry Text="{Binding Listenings}" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Chartplace" Grid.Row="2" Grid.Column="0" />
+                <Entry Text="{Binding ChartPlace}" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Musician" Grid.Row="3" Grid.Column="0" />
+                <Label Text="{Binding Musician.Name}" Grid.Row="3" Grid.Column="1"
+                       StyleClass="Value" Margin="4,0,0,0"/>
+            </Grid>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Save" Command="{Binding SaveCommand}" Margin="0,10,10,0"/>
+                <Button Text="Cancel" Command="{Binding CancelCommand}" Margin="10,10,0,0"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

@@ -1,0 +1,5 @@
+﻿  ConsoleApplication1.cpp
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\ConsoleApplication1\ConsoleApplication1.cpp(243,22): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\ConsoleApplication1\ConsoleApplication1.cpp(309,22): warning C4244: аргумент: преобразование "__int64" в "int", возможна потеря данных
+D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\ConsoleApplication1\ConsoleApplication1.cpp(324,11): warning C4244: инициализация: преобразование "unsigned __int64" в "int", возможна потеря данных
+  ConsoleApplication1.vcxproj -> D:\Studies\course_2\sem_4\Git\Denis_Konchik_153503_ACS_term_4\Lab_1_2_3\x64\Debug\ConsoleApplication1.exe

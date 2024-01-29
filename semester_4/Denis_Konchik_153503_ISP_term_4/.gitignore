@@ -1,0 +1,9 @@
+**/*.flat
+**/*.cache
+**/*.o
+**/*.ll
+**/*.cache
+**/*.zip
+**/Debug
+**/.vs
+**/obj

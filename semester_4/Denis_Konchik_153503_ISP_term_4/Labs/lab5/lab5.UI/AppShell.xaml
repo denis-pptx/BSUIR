@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="lab5.UI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:lab5.UI" 
+    xmlns:constants="clr-namespace:lab5.UI.Constants"
+    xmlns:pages="clr-namespace:lab5.UI.Pages">
+
+    <FlyoutItem Title="Home">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static constants:FontConstants.Home}"
+                             Color="Black"/>
+        </FlyoutItem.Icon>
+        <ShellContent 
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="CalculatorPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Musicians">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static constants:FontConstants.Music}"
+                             Color="Black"/>
+        </FlyoutItem.Icon>
+        <ShellContent 
+            ContentTemplate="{DataTemplate pages:MusiciansPage}"
+            Route="CalculatorPage" />
+    </FlyoutItem>
+
+</Shell>

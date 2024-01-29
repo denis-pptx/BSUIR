@@ -1,0 +1,6 @@
+**/.idea
+**/venv
+**/__pycache__
+**/.pytest_cache
+Lab2/Task2/containers
+Lab1/Task1/text

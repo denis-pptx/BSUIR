@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab5.UI.Pages.MusiciansPage"
+             xmlns:constants="clr-namespace:lab5.UI.Constants"
+             xmlns:models="clr-namespace:lab5.UI.ViewModels"
+             xmlns:entites="clr-namespace:lab5.Domain.Entities;assembly=lab5.Domain"
+             xmlns:valueConverters="clr-namespace:lab5.UI.ValueConverters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             x:DataType="models:MusiciansViewModel"
+             Title="Musicians">
+
+
+    <ContentPage.Resources>
+        <Color x:Key="songDefaultBackgroundColor">WhiteSmoke</Color>
+        <Color x:Key="songWrongBackgroundColor">LightPink</Color>
+    </ContentPage.Resources>
+
+    <!--<ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+                                        Command="{Binding UpdateMusicianListCommand}"/>
+    </ContentPage.Behaviors>-->
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding AddCommand}" Text="Add">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="FAFS-900"
+                                 Glyph="{x:Static constants:FontConstants.Plus}" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+
+
+
+    <StackLayout Orientation="Vertical" Padding="10" Spacing="10">
+
+        <Picker FontSize="26"
+                ItemsSource="{Binding Musicians}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedMusician, Mode=TwoWay}">
+            <Picker.Behaviors>
+                <toolkit:EventToCommandBehavior EventName="SelectedIndexChanged"
+                                                Command="{Binding UpdateSongsListCommand}"/>
+            </Picker.Behaviors>
+        </Picker>
+
+        <Frame CornerRadius="0" IsVisible="{Binding IsMusicianSelected}">
+            <Frame.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="20"/>
+                </Style>
+            </Frame.Resources>
+
+            <Grid RowDefinitions="*,*" ColumnDefinitions="*,*">
+                <Label Text="Country" 
+                       Grid.Row="0" Grid.Column="0" />
+                <Label Text="{Binding SelectedMusician.Country}" 
+                       Grid.Row="0" Grid.Column="1" />
+                <Label Text="Subscribers" 
+                       Grid.Row="1" Grid.Column="0" />
+                <Label Text="{Binding SelectedMusician.Subscribers}" 
+                       Grid.Row="1" Grid.Column="1" />
+            </Grid>
+        </Frame>
+
+
+        <CollectionView ItemsSource="{Binding Songs}" 
+                        VerticalOptions="FillAndExpand">
+
+            <CollectionView.Resources>
+                <Style TargetType="Label">
+                    <Setter Property="FontSize" Value="17"/>
+                </Style>
+            </CollectionView.Resources>
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="entites:Song">
+                    <Frame Margin="0,5" Padding="10">
+                        <Frame.BackgroundColor>
+                            <Binding Path="ChartPlace">
+                                <Binding.Converter>
+                                    <valueConverters:ChartPlaceToColorValueConverter 
+                                        DefaultBackgroundColor="{StaticResource songDefaultBackgroundColor}" 
+                                        WrongBackgroundColor="{StaticResource songWrongBackgroundColor}"/>
+                                </Binding.Converter>
+                            </Binding>
+                        </Frame.BackgroundColor>
+
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Command="{Binding 
+                                                            Source={RelativeSource AncestorType={x:Type models:MusiciansViewModel}},
+                                                            Path=ShowDetailsCommand}"
+                                                    CommandParameter="{Binding .}"/>
+                        </Frame.GestureRecognizers>
+
+                        <StackLayout Orientation="Horizontal" Spacing="20">
+ 
+                            <Frame Margin="0" Padding="0" 
+                                   CornerRadius="30" HasShadow="True"
+                                   WidthRequest="60" HeightRequest="60">
+                                <Image Source="{Binding Id, Converter={StaticResource SongIdToImageValueConverter}}"
+                                       Aspect="AspectFill" WidthRequest="60" HeightRequest="60">
+                                </Image>
+                            </Frame>
+                            <Label Text="{Binding Name}" />
+                        </StackLayout>
+
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+
+        </CollectionView>
+
+    </StackLayout>
+</ContentPage>

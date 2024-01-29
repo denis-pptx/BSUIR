@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:helper="clr-namespace:lab1.Helpers"
+             xmlns:viewModel="clr-namespace:lab1.ViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="lab1.View.CalculatorPage"
+             Title="Calculator"
+             BackgroundColor="{StaticResource applicationBackgroundColor}"
+             Shell.BackgroundColor="{StaticResource shellBackgroundColor}">
+
+    <ContentPage.Behaviors>
+        <toolkit:StatusBarBehavior StatusBarColor="{StaticResource shellBackgroundColor}" StatusBarStyle="LightContent" />
+    </ContentPage.Behaviors>
+
+    <Grid RowDefinitions="0.27*, 0.08*, 0.65*" Margin="5" 
+                 x:DataType="viewModel:CalculatorViewModel">
+
+        <VerticalStackLayout Margin="10,0" Grid.Row="0" 
+                             VerticalOptions="Center">
+            <Label x:Name="OutputLabel"
+                   Text="{Binding Output, Mode=OneWay}" 
+                   FontSize="{Binding OutputLabelFontSize}"
+                   HorizontalTextAlignment="End"
+                   TextColor="{StaticResource disabledButtonTextColor}"/>
+            <Label x:Name="EntryLabel"
+                   Text="{Binding Entry, Mode=OneWay}" 
+                   FontSize="{Binding EntryLabelFontSize}"
+                   FontFamily="Segoe-UI"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="End"
+                   TextColor="{StaticResource buttonTextColor}"/>
+        </VerticalStackLayout>
+
+        <Grid ColumnDefinitions="*,*,*,*,*"
+              Padding="0,3" ColumnSpacing="3" Grid.Row="1">
+
+            <Button Text="MC" Style="{StaticResource memoryButtonStyle}" 
+                    Command="{Binding MC_Command}" Grid.Column="0"/>
+            <Button Text="MR" Style="{StaticResource memoryButtonStyle}"
+                    Command="{Binding MR_Command}" Grid.Column="1"/>
+            <Button Text="M+" Style="{StaticResource memoryButtonStyle}" 
+                    Command="{Binding MPlus_Command}" Grid.Column="2"/>
+            <Button Text="M-" Style="{StaticResource memoryButtonStyle}" 
+                    Command="{Binding MMinus_Command}" Grid.Column="3"/>
+            <Button Text="MS" Style="{StaticResource memoryButtonStyle}" 
+                    Command="{Binding MS_Command}" Grid.Column="4"/>
+        </Grid>
+
+        <Grid RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="*,*,*,*,*,*,*,*" 
+              RowSpacing="3" ColumnSpacing="3"
+              Grid.Row="2" VerticalOptions="FillAndExpand">
+
+            <Button Text="{x:Static helper:FontHelper.PlusMinus}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding PlusMinusCommand}"
+                    Style="{StaticResource lightButtonStyle}"
+                    Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="1"/>
+            <Button Text="|x|"
+                    Command="{Binding ModuleCommand}"
+                    FontSize="18"
+                    Style="{StaticResource lightButtonStyle}"
+                    Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="1"/>
+            <Button Text="0"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="0"
+                    Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="."
+                    x:Name="dotButton"
+                    Style="{StaticResource lightButtonStyle}"
+                    Command="{Binding DotCommand}"
+                    Grid.Row="5" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.Equals}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding EqualsCommand}"
+                    Style="{StaticResource blueButtonStyle}"
+                    Grid.Row="5" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+            <Button Text="1"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="1"
+                    Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="2"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="2"
+                    Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="3"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="3"
+                    Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.Plus}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding SimpleOperationCommand}" CommandParameter="+"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="4" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+            <Button Text="4"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="4"
+                    Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="5"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="5"
+                    Grid.Row="3" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="6"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="6"
+                    Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.Minus}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding SimpleOperationCommand}" CommandParameter="-"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="3" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+            <Button Text="7"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="7"
+                    Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="8"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="8"
+                    Grid.Row="2" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="9"
+                    Style="{StaticResource lightButtonStyle}"
+                    IsEnabled="{Binding IsDigitButtonEnabled}"
+                    Command="{Binding DigitCommand}" CommandParameter="9"
+                    Grid.Row="2" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.Multiply}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding SimpleOperationCommand}" CommandParameter="×"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="2" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+            <Button Text="¹∕ 𝑥"
+                    Command="{Binding BackOperationCommand}"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="𝑥²"
+                    Command="{Binding SquareCommand}"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.SquareRoot}"
+                    Command="{Binding SquareRootCommand}"
+                    FontFamily="FAFS-900"
+                    Style="{StaticResource darkButtonStyle}"
+                    IsEnabled="{Binding IsSquareRootButtonEnabled}"
+                    Grid.Row="1" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.Divide}"
+                    FontFamily="FAFS-900"
+                    Command="{Binding SimpleOperationCommand}" CommandParameter="÷"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="1" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+            <Button Text="{x:Static helper:FontHelper.Percent}"
+                    Command="{Binding PercentCommand}"
+                    FontFamily="FAFS-900"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Button Text="CE"
+                    Command="{Binding CleanEntryCommand}"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="2"/>
+            <Button Text="C"
+                    Command="{Binding CancelCommand}"
+                    Style="{StaticResource darkButtonStyle}"
+                    Grid.Row="0" Grid.Column="4" Grid.ColumnSpan="2"/>
+            <Button Text="{x:Static helper:FontHelper.BackSpace}"
+                    Style="{StaticResource darkButtonStyle}"
+                    Command="{Binding BackspaceCommand}"
+                    FontFamily="FAFS-900"
+                    Grid.Row="0" Grid.Column="6" Grid.ColumnSpan="2"/>
+
+        </Grid>
+     
+
+
+    </Grid>
+</ContentPage>

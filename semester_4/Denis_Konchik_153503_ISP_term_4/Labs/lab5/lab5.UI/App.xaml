@@ -1,0 +1,40 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:lab5.UI"
+             xmlns:valueConverters="clr-namespace:lab5.UI.ValueConverters"
+             x:Class="lab5.UI.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="VerticalOptions" Value="Center"/>
+            </Style>
+            
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="20"/>
+                <Setter Property="MaxLength" Value="50"/>
+                <Setter Property="VerticalOptions" Value="Center" />
+            </Style>
+
+            <Style Class="Value" TargetType="Label">
+                <Setter Property="TextColor" Value="Black" />
+            </Style>
+
+
+            <valueConverters:SongIdToImageValueConverter x:Key="SongIdToImageValueConverter" />
+          
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

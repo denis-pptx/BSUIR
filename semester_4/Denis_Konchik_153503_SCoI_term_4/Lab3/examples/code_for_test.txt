@@ -1,0 +1,23 @@
+import src
+from pprint import pprint
+import examples
+
+with open(r'examples/destination.txt', "r") as file:
+    human = src.JsonSerializer().load(file)(18, 'Denis')
+
+print(human.age)
+print(human._name)
+
+with open(r'examples/source.txt', "w") as file:
+    src.JsonSerializer().dump(examples.test, file)
+
+test = examples.test
+serializer = src.JsonSerializer()
+
+print(f'{test = }')
+
+dumps = serializer.dumps(test)
+print(f'{dumps = }')
+
+loads = serializer.loads(dumps)
+print(f'{loads = }')

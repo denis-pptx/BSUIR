@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab5.UI.Pages.EditSongPage"
+             xmlns:constants="clr-namespace:lab5.UI.Constants"
+             xmlns:viewModels="clr-namespace:lab5.UI.ViewModels"
+             xmlns:valueConverters="clr-namespace:lab5.UI.ValueConverters"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit" 
+             x:DataType="viewModels:EditSongViewModel"
+             Title="Edit Song">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding ResetCommand}" Text="Reset">
+            <ToolbarItem.IconImageSource>
+                <FontImageSource FontFamily="FAFS-900"
+                                 Glyph="{x:Static constants:FontConstants.Refresh}" />
+            </ToolbarItem.IconImageSource>
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    
+    <ScrollView>
+        
+        <StackLayout Orientation="Vertical" 
+                     VerticalOptions="Start"
+                     Margin="20" >
+
+
+            <Frame HasShadow="True" Padding="10" Margin="0,0,0,10">
+                <Image Source="{Binding Song.Id, Converter={StaticResource SongIdToImageValueConverter}}"
+                        Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="Center"/>
+            </Frame>
+        
+            <Grid ColumnDefinitions="0.35*,0.65*" 
+                  RowDefinitions="*,*,*,*,*" 
+                  VerticalOptions="Fill"
+                  RowSpacing="10">
+
+                <Label Text="Name" Grid.Row="0" Grid.Column="0" />
+                <Entry Text="{Binding Name}" Grid.Row="0" Grid.Column="1" />
+
+                <Label Text="Listenings" Grid.Row="1" Grid.Column="0" />
+                <Entry Text="{Binding Listenings}" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                <Label Text="Chartplace" Grid.Row="2" Grid.Column="0" />
+            
+                <Entry Text="{Binding ChartPlace}" Keyboard="Numeric" Grid.Row="2" Grid.Column="1"/>
+
+                <Label Text="Musician" Grid.Row="3" Grid.Column="0" />
+                <Picker FontSize="20"
+                        ItemsSource="{Binding Musicians}"
+                        ItemDisplayBinding="{Binding Name}"
+                        SelectedItem="{Binding Musician, Mode=TwoWay}"
+                        VerticalOptions="Center"
+                        Grid.Row="3" Grid.Column="1">
+                </Picker>
+
+                <Label Text="Picture" Grid.Row="4" Grid.Column="0" />
+                <Button Text="Choose" 
+                        
+                        Grid.Row="4" Grid.Column="1"
+                        Command="{Binding PickPictureCommand}"/>
+
+            </Grid>
+
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Save" Command="{Binding SaveCommand}" Margin="0,10,10,0"/>
+                <Button Text="Cancel" Command="{Binding CancelCommand}" Margin="10,10,0,0"/>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+    
+</ContentPage>

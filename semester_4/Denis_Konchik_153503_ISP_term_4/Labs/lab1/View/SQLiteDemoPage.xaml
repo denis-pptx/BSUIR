@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:entities="clr-namespace:lab1.Entities"
+             xmlns:viewModel="clr-namespace:lab1.ViewModel"
+             xmlns:helpers="clr-namespace:lab1.Helpers"
+             x:Class="lab1.View.SQLiteDemoPage"
+             Title="SQLiteDemo"
+             x:DataType="viewModel:SQLiteDemoViewModel">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <helpers:StringToNumberConverter x:Key="numberConverter" />
+        </ResourceDictionary>
+        <Style x:Key="InfoString" TargetType="Label">
+            <Setter Property="FontSize" Value="21"/>
+            <Setter Property="FontAttributes" Value="Bold"/>
+        </Style>
+    </ContentPage.Resources>
+    
+    <StackLayout Padding="10">
+
+        <Picker Title="Select a musician"   
+                ItemsSource="{Binding Musicians}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedMusician, Mode=TwoWay}"
+                FontSize="30"  
+                FontAttributes="Bold" 
+                IsEnabled="{Binding IsNotBusy}"/>
+
+        <StackLayout Padding="5,5,5,10" IsVisible="{Binding Songs.Count}" IsEnabled="{Binding IsNotBusy}">
+            <Label Text="{Binding SelectedMusician.Country, StringFormat='Country: {0}'}"
+                   Style="{StaticResource InfoString}"/>
+            <Label Style="{StaticResource InfoString}">
+                <Label.Text>
+                    <Binding Path="SelectedMusician.Subscribers" ConverterParameter="Subscribers: ">
+                        <Binding.Converter >
+                            <helpers:StringToNumberConverter />
+                        </Binding.Converter>
+                    </Binding>
+                </Label.Text>
+            </Label>
+            <Label Style="{StaticResource InfoString}">
+                <Label.Text>
+                    <Binding Path="TotalListenings" ConverterParameter="Listenings: ">
+                        <Binding.Converter >
+                            <helpers:StringToNumberConverter />
+                        </Binding.Converter>
+                    </Binding>
+                </Label.Text>
+            </Label>
+            <Label Style="{StaticResource InfoString}">
+                <Label.Text>
+                    <Binding Path="TotalLikes" ConverterParameter="Likes: ">
+                        <Binding.Converter >
+                            <helpers:StringToNumberConverter />
+                        </Binding.Converter>
+                    </Binding>
+                </Label.Text>
+            </Label>
+        </StackLayout>
+
+        <RefreshView IsRefreshing="{Binding IsRefreshing}"
+                     Command="{Binding RefreshCommand}">
+            
+            <CollectionView ItemsSource="{Binding Songs}" 
+                            VerticalOptions="FillAndExpand" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="entities:Song" >
+                        <Grid Padding="0,5">
+                            <Frame CornerRadius="10">
+                                <StackLayout Spacing="1">
+                                    <Label Text="{Binding Title}" FontSize = "24" FontAttributes="Bold"/>
+                                    <Label FontSize="19">
+                                        <Label.Text>
+                                            <Binding Path="Listenings" ConverterParameter="Listenings: ">
+                                                <Binding.Converter >
+                                                    <helpers:StringToNumberConverter />
+                                                </Binding.Converter>
+                                            </Binding>
+                                        </Label.Text>
+                                    </Label>
+                                    <Label FontSize="18">
+                                        <Label.Text>
+                                            <Binding Path="Likes" ConverterParameter="Likes: ">
+                                                <Binding.Converter >
+                                                    <helpers:StringToNumberConverter />
+                                                </Binding.Converter>
+                                            </Binding>
+                                        </Label.Text>
+                                    </Label>
+                                </StackLayout>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+                <CollectionView.EmptyView>
+                    <ContentView>
+                        <Grid Padding="20,30,20,120">
+                            <Image Source="dotnet_bot.svg"/>
+                        </Grid>
+                    </ContentView>
+                </CollectionView.EmptyView>
+            </CollectionView>
+            
+        </RefreshView>
+    </StackLayout>
+    
+
+
+</ContentPage>

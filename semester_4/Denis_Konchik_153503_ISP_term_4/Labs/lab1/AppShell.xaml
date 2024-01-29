@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="lab1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:lab1.View" 
+    xmlns:helpers="clr-namespace:lab1.Helpers"
+    xmlns:myResources="clr-namespace:lab1.MyResources"
+    FlyoutBackgroundColor="{StaticResource applicationBackgroundColor}">
+
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <myResources:FlyoutItemLayoutDataTemplate/>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+    <FlyoutItem Title="Calculator">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static helpers:FontHelper.Calculator}"
+                             Color="{StaticResource flyoutItemTextColor}"/>
+        </FlyoutItem.Icon>
+        <ShellContent 
+            ContentTemplate="{DataTemplate view:CalculatorPage}"
+            Route="CalculatorPage" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="ProgressDemo">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static helpers:FontHelper.ProgressBar}"
+                             Color="{StaticResource flyoutItemTextColor}"/>
+        </FlyoutItem.Icon>
+        <ShellContent
+            ContentTemplate="{DataTemplate view:ProgressDemoPage}"
+            Route="ProgressDemoPage" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="SQLiteDemo">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static helpers:FontHelper.Database}"
+                             Color="{StaticResource flyoutItemTextColor}"/>
+        </FlyoutItem.Icon>
+        <ShellContent
+            ContentTemplate="{DataTemplate view:SQLiteDemoPage}"
+            Route="SQLiteDemoPage" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="CurrencyConverter">
+        <FlyoutItem.Icon>
+            <FontImageSource FontFamily="FAFS-900"
+                             Glyph="{x:Static helpers:FontHelper.Wallet}"
+                             Color="{StaticResource flyoutItemTextColor}"/>
+        </FlyoutItem.Icon>
+        <ShellContent
+            ContentTemplate="{DataTemplate view:CurrencyConverterPage}"
+            Route="CurrencyConverterPage" />
+    </FlyoutItem>
+
+
+
+</Shell>
