@@ -1,0 +1,145 @@
+
+; [Процедура] – обработка командной строки
+processCommandLine PROC near
+  
+    cld       ; Для команд строковой обработки       
+    mov bp,sp ; Сохранить текущую вершину стека в BP
+   
+    mov cl,[80h] ; Размер командной строки
+    cmp cl,1     ; Проверка длины командной строки
+    jle end      ; выход из программы
+    
+    ; Преобразовать список параметров в PSP так, чтобы
+    ; каждый параметр заканчивался нулем (ASCIZ-строка)
+    ; адреса всех параметров поместить в стек
+    ; в переменную paramsNumber записать число параметров
+    
+    mov cx,0FFFFh ; Для команд работы со строками
+    mov di,81h ; Начало командной строки в ES:DI
+    
+find_param:
+    mov al,' '        ; AL = пробел
+    repz scasb        ; Искать не пробел
+    dec di            ; DI = адрес начала параметра 
+    push di           ; Сохранить адрес в стек
+    mov paramOffset,di ; Для будущей операции вывода параметра
+    inc paramsNumber  ; Увеличить paramsNumber на 1
+    mov si,di         ; SI = DI для следующей команды lodsb
+    
+scan_params:
+    lodsb           ; Прочитать символ из параметра
+    cmp al,0Dh      ; Если 0Dh – последний параметр
+    je params_ended ; Параметры закончились
+    cmp al,20h      ; Сравнение с пробелом
+    jne scan_params ; Текущий параметр не закончился
+    
+    dec si                       ; SI = первый байт после параметра
+    mov [si],'$'                 ; Записать в него $
+    printStrByOffset paramOffset ; Распечатать параметр
+    printStr toNewLine           ; Переход на новую строку
+    mov [si],0                   ; Записать в него 0
+    mov di,si                    ; DI = SI для команды scasb
+    inc di                       ; DI = следующий после нуля символ
+     
+    jmp find_param ; Продолжить разбор командной строки
+    
+params_ended:
+    dec si                       ; SI = первый байт после конца 
+                                 ; последнего параметра
+    mov [si],'$'                 ; Записать в него $
+    printStrByOffset paramOffset ; Распечатать параметр
+    printStr toNewLine           ; Переход на новую строку
+    mov [si],0                   ; Записать в него 0
+
+    ; Достаем смещения из стека
+pop_from_stack:
+    pop symbolsOffset
+    
+    ; Проверка, что в конце ввели пробелы 
+    mov bx,symbolsOffset ; BX = смещение на символы
+    cmp [bx],0h          ; [BX] != 0?
+    jne continue         ; Все нормально   
+    ; Иначе – последний параметр нуль
+    dec paramsNumber     ; 
+    pop symbolsOffset    ;
+    ; Продолжаем доставать
+continue: 
+    pop destination_file_offset  
+    pop source_file_offset
+end:     
+    mov sp,bp ; Восстановить SP  
+    ret       ; Выход из процедуры     
+processCommandLine endp
+
+
+
+
+
+
+
+
+
+
+
+; [Процедура] – обработка командной строки
+processCommandLine PROC near
+  
+    cld       ; Для команд строковой обработки       
+    mov bp,sp ; Сохранить текущую вершину стека в BP
+   
+    mov cl,[80h] ; Размер командной строки
+    cmp cl,1     ; Проверка длины командной строки
+    jle end      ; выход из программы
+    
+    ; Преобразовать список параметров в PSP так, чтобы
+    ; каждый параметр заканчивался нулем (ASCIZ-строка)
+    ; адреса всех параметров поместить в стек
+    ; в переменную paramsNumber записать число параметров
+    
+    mov cx,0FFFFh ; Для команд работы со строками
+    mov di,81h ; Начало командной строки в ES:DI
+    
+find_param:
+    mov al,' '        ; AL = пробел
+    repz scasb        ; Искать не пробел
+    dec di            ; DI = адрес начала параметра 
+    push di           ; Сохранить адрес в стек
+    mov paramOffset,di ; Для будущей операции вывода параметра
+    inc paramsNumber  ; Увеличить paramsNumber на 1
+    mov si,di         ; SI = DI для следующей команды lodsb
+    
+scan_params:
+    lodsb           ; Прочитать символ из параметра
+    cmp al,0Dh      ; Если 0Dh – последний параметр
+    je params_ended ; Параметры закончились
+    cmp al,20h      ; Сравнение с пробелом
+    jne scan_params ; Текущий параметр не закончился
+    
+    dec si                       ; SI = первый байт после параметра
+    mov [si],'$'                 ; Записать в него $
+    printStrByOffset paramOffset ; Распечатать параметр
+    printStr toNewLine           ; Переход на новую строку
+    mov [si],0                   ; Записать в него 0
+    mov di,si                    ; DI = SI для команды scasb
+    inc di                       ; DI = следующий после нуля символ
+     
+    jmp find_param ; Продолжить разбор командной строки
+    
+params_ended:
+    dec si                       ; SI = первый байт после конца 
+                                 ; последнего параметра
+    mov [si],'$'                 ; Записать в него $
+    printStrByOffset paramOffset ; Распечатать параметр
+    printStr toNewLine           ; Переход на новую строку
+    mov [si],0                   ; Записать в него 0
+
+    ; Достаем смещения из стека
+pop_from_stack:
+    pop symbolsOffset
+    pop destination_file_offset  
+    pop source_file_offset
+	
+end:     
+    mov sp,bp ; Восстановить SP  
+    ret       ; Выход из процедуры     
+processCommandLine endp

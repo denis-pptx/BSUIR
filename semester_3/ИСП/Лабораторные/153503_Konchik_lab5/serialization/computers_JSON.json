@@ -1,0 +1,62 @@
+[
+  {
+    "Winchester": {
+      "Manufacturer": "Toshiba",
+      "Interface": "SATA",
+      "FormFactor": 3.5,
+      "RotationSpeed": 5400,
+      "DataTransferRate": 50,
+      "BufferSize": 8
+    }
+  },
+  {
+    "Winchester": {
+      "Manufacturer": "Seagate",
+      "Interface": "ATA",
+      "FormFactor": 2.5,
+      "RotationSpeed": 7200,
+      "DataTransferRate": 74,
+      "BufferSize": 32
+    }
+  },
+  {
+    "Winchester": {
+      "Manufacturer": "WD",
+      "Interface": "SATA",
+      "FormFactor": 3.5,
+      "RotationSpeed": 4200,
+      "DataTransferRate": 60,
+      "BufferSize": 64
+    }
+  },
+  {
+    "Winchester": {
+      "Manufacturer": "Apple",
+      "Interface": "ATA",
+      "FormFactor": 2.5,
+      "RotationSpeed": 10000,
+      "DataTransferRate": 110,
+      "BufferSize": 64
+    }
+  },
+  {
+    "Winchester": {
+      "Manufacturer": "Hitachi",
+      "Interface": "SATA",
+      "FormFactor": 3.5,
+      "RotationSpeed": 5400,
+      "DataTransferRate": 90,
+      "BufferSize": 16
+    }
+  },
+  {
+    "Winchester": {
+      "Manufacturer": "Samsung",
+      "Interface": "SATA",
+      "FormFactor": 3.5,
+      "RotationSpeed": 7200,
+      "DataTransferRate": 70,
+      "BufferSize": 32
+    }
+  }
+]

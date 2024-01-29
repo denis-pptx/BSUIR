@@ -1,0 +1,27 @@
+[
+  {
+    "Age": 18,
+    "Male": true,
+    "Name": "Denis"
+  },
+  {
+    "Age": 20,
+    "Male": false,
+    "Name": "Elena"
+  },
+  {
+    "Age": 19,
+    "Male": true,
+    "Name": "Evgeniy"
+  },
+  {
+    "Age": 30,
+    "Male": true,
+    "Name": "Boris"
+  },
+  {
+    "Age": 35,
+    "Male": true,
+    "Name": "Vladimir"
+  }
+]

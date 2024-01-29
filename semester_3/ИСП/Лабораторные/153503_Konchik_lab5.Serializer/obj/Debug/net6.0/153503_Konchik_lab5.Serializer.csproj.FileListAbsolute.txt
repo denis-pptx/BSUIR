@@ -1,0 +1,15 @@
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\bin\Debug\net6.0\153503_Konchik_lab5.Serializer.deps.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\bin\Debug\net6.0\153503_Konchik_lab5.Serializer.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\bin\Debug\net6.0\153503_Konchik_lab5.Serializer.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\bin\Debug\net6.0\153503_Konchik_lab5.Domain.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\bin\Debug\net6.0\153503_Konchik_lab5.Domain.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.csproj.AssemblyReference.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.AssemblyInfoInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.AssemblyInfo.cs
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.csproj.CoreCompileInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.csproj.CopyComplete
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\refint\153503_Konchik_lab5.Serializer.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\153503_Konchik_lab5.Serializer.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab5.Serializer\obj\Debug\net6.0\ref\153503_Konchik_lab5.Serializer.dll

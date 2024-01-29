@@ -1,0 +1,64 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+  8000 CE 82 00     ldx #$8200 ;
+  8003 86 0A        ldaa #10   ;  A
+  8005 C6 46        ldab #70   ;  B
+
+                   ;
+                   LoopFillCells
+  8007 A7 00        staa 0,x
+  8009 E7 20        stab $20,x
+  800B 4C           inca
+  800C 5C           incb
+  800D 08           inx
+  800E 8C 82 1F     cpx #$821F
+  8011 2F F4        ble LoopFillCells ;  x <= #$821F
+
+                    ;bra end
+  8013 CE 82 00     ldx #$8200 ;
+
+                   ;
+                   LoopExhangeTetrad
+  8016 A6 00        ldaa 0,x
+  8018 97 10        staa $10
+  801A 15 10 F0     bclr $10,%11110000
+  801D 96 10        ldaa $10 ;  A  [0,x]
+
+  801F E6 20        ldab $20,x
+  8021 D7 10        stab $10
+  8023 15 10 0F     bclr $10,%00001111
+  8026 D6 10        ldab $10 ;  B  [$20,x]
+
+  8028 1B           aba
+  8029 97 11        staa $11 ;  $11   [$20,x],  [0,x]
+
+
+  802B A6 20        ldaa $20,x
+  802D 97 10        staa $10
+  802F 15 10 F0     bclr $10,%11110000
+  8032 96 10        ldaa $10 ;  A  [$20,x]
+
+  8034 E6 00        ldab 0,x
+  8036 D7 10        stab $10
+  8038 15 10 0F     bclr $10,%00001111
+  803B D6 10        ldab $10 ;  B  [0,x]
+
+  803D 1B           aba
+  803E 97 12        staa $12 ;  $12   [0,x],  [$20,x]
+
+
+  8040 96 11        ldaa $11
+  8042 A7 00        staa 0,x ;  $11  [0,x]
+  8044 96 12        ldaa $12
+  8046 A7 20        staa $20,x ;  $12  [$20,x]
+
+  8048 08           inx
+  8049 8C 82 1F     cpx #$821F
+  804C 2F C8        ble LoopExhangeTetrad ;  x <= #$821F
+                   ;end
+
+  Symbol Table 
+
+  LOOPEXHANGETETRAD  8016
+  LOOPFILLCELLS      8007

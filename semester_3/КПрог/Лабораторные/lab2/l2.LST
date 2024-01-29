@@ -1,0 +1,39 @@
+  ADDR B1 B2 B3 B4 thrass11.tmp                                     PAGE       1
+
+                    org $8000
+
+  8000 CE 00 00     ldx #0 ;  X
+
+  8003 F6 80 00     ldab $8000 ;   B
+  8006 3A           abx        ;  B  X
+
+                    ;   4
+
+  8007 F6 80 01     ldab $8001
+  800A 3A           abx
+
+  800B F6 80 02     ldab $8002
+  800E 3A           abx
+
+  800F F6 80 03     ldab $8003
+  8012 3A           abx
+
+  8013 F6 80 04     ldab $8004
+  8016 3A           abx
+
+                    ;  -  X   $8000..$8004
+
+  8017 35           txs ;  X  SP
+                    ;  SP  7
+  8018 36           psha
+  8019 36           psha
+  801A 36           psha
+  801B 36           psha
+  801C 36           psha
+  801D 36           psha
+  801E 36           psha
+  801F 30           tsx ;  SP  X
+
+  8020 3C           pshx ;  X
+
+

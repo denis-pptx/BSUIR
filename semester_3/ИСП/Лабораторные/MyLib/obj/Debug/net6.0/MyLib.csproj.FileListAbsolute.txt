@@ -1,0 +1,16 @@
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\lab6.deps.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\lab6.runtimeconfig.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\lab6.exe
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\MyLib.deps.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\MyLib.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab6\Debug\net6.0\MyLib.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.csproj.AssemblyReference.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfoInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.AssemblyInfo.cs
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.csproj.CoreCompileInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.csproj.CopyComplete
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\refint\MyLib.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\MyLib.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\MyLib\obj\Debug\net6.0\ref\MyLib.dll

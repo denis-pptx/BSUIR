@@ -1,0 +1,15 @@
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\bin\Debug\net6.0\153503_Konchik_lab1.exe
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\bin\Debug\net6.0\153503_Konchik_lab1.deps.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\bin\Debug\net6.0\153503_Konchik_lab1.runtimeconfig.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\bin\Debug\net6.0\153503_Konchik_lab1.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\bin\Debug\net6.0\153503_Konchik_lab1.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.csproj.AssemblyReference.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.AssemblyInfoInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.AssemblyInfo.cs
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.csproj.CoreCompileInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\refint\153503_Konchik_lab1.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\153503_Konchik_lab1.genruntimeconfig.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\153503_Konchik_lab1\obj\Debug\net6.0\ref\153503_Konchik_lab1.dll

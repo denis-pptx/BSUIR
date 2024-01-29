@@ -1,0 +1,2 @@
+D:\Studies\course_2\sem_3\МЧА\Лабораторные\lab1\x64\Debug\lab1.exe
+D:\Studies\course_2\sem_3\МЧА\Лабораторные\lab2\x64\Debug\lab2.exe

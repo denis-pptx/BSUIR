@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "153503_Konchik_lab5/1.0.0": {
+        "dependencies": {
+          "153503_Konchik_lab5.Domain": "1.0.0",
+          "153503_Konchik_lab5.Serializer": "1.0.0"
+        },
+        "runtime": {
+          "153503_Konchik_lab5.dll": {}
+        }
+      },
+      "153503_Konchik_lab5.Domain/1.0.0": {
+        "runtime": {
+          "153503_Konchik_lab5.Domain.dll": {}
+        }
+      },
+      "153503_Konchik_lab5.Serializer/1.0.0": {
+        "dependencies": {
+          "153503_Konchik_lab5.Domain": "1.0.0"
+        },
+        "runtime": {
+          "153503_Konchik_lab5.Serializer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "153503_Konchik_lab5/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "153503_Konchik_lab5.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "153503_Konchik_lab5.Serializer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ClassLibrary\**" />
+    <EmbeddedResource Remove="ClassLibrary\**" />
+    <None Remove="ClassLibrary\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Lorem.Universal.Net" Version="4.0.80" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ClassLibrary\ClassLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

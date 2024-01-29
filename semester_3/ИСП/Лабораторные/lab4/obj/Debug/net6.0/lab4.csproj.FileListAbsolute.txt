@@ -1,0 +1,15 @@
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.csproj.AssemblyReference.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.GeneratedMSBuildEditorConfig.editorconfig
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.AssemblyInfoInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.AssemblyInfo.cs
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.csproj.CoreCompileInputs.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\bin\Debug\net6.0\lab4.exe
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\bin\Debug\net6.0\lab4.deps.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\bin\Debug\net6.0\lab4.runtimeconfig.json
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\bin\Debug\net6.0\lab4.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\bin\Debug\net6.0\lab4.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\refint\lab4.dll
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.pdb
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\lab4.genruntimeconfig.cache
+D:\Studies\course_2\sem_3\ИСП\Лабораторные\lab4\obj\Debug\net6.0\ref\lab4.dll

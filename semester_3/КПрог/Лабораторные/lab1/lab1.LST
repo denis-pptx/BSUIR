@@ -1,0 +1,8 @@
+  ADDR B1 B2 B3 B4 D:\Studies\course_2\sem_3\КПрог\Лабораторные\    PAGE       1
+
+                    org $8000
+  8000 36           psha
+  8001 30           tsx ;  SP  X
+  8002 8F           xgdx ;  D  X
+  8003 5D           tstb ;  CCR    B
+

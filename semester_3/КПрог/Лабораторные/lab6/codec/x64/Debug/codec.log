@@ -1,0 +1,5 @@
+﻿  codec.cpp
+D:\Studies\course_2\sem_3\КПрог\Лабораторные\lab6\codec\codec.cpp(27,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Studies\course_2\sem_3\КПрог\Лабораторные\lab6\codec\codec.cpp(28,35): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Studies\course_2\sem_3\КПрог\Лабораторные\lab6\codec\codec.cpp(29,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  codec.vcxproj -> D:\Studies\course_2\sem_3\КПрог\Лабораторные\lab6\codec\x64\Debug\codec.exe
