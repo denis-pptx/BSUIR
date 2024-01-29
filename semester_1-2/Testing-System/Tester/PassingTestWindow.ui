@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PassingTestWindow</class>
+ <widget class="QWidget" name="PassingTestWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>725</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QPushButton" name="comebackButton">
+     <property name="text">
+      <string>Comeback</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QLabel" name="timeLabel">
+     <property name="styleSheet">
+      <string notr="true">font: 700 22pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="4">
+    <widget class="TaskViewWidget" name="taskViewWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QLabel" name="numberLabel">
+     <property name="text">
+      <string>Number:</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="prevButton">
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>&lt;----</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="nextButton">
+     <property name="styleSheet">
+      <string notr="true">font: 700 9pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>----&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="finishButton">
+     <property name="text">
+      <string>Finish</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>TaskViewWidget</class>
+   <extends>QWidget</extends>
+   <header>Task/TaskViewWidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

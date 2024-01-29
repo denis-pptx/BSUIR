@@ -1,0 +1,54 @@
+﻿  dllmain.cpp
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(246,9): warning C4273: String::String: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(20,5): message : см. предыдущее определение "{ctor}"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(254,9): warning C4273: String::String: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(22,5): message : см. предыдущее определение "{ctor}"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(262,9): warning C4273: String::String: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(23,5): message : см. предыдущее определение "{ctor}"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(276,9): warning C4273: String::String: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(24,5): message : см. предыдущее определение "{ctor}"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(288,17): warning C4273: String::operator =: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(27,13): message : см. предыдущее определение "="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(294,17): warning C4273: String::operator =: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(28,13): message : см. предыдущее определение "="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(309,15): warning C4273: String::operator []: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(31,11): message : см. предыдущее определение "[]"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(314,15): warning C4273: String::at: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(32,11): message : см. предыдущее определение "at"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(322,21): warning C4273: String::c_str: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(33,17): message : см. предыдущее определение "c_str"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(331,16): warning C4273: String::size: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(36,12): message : см. предыдущее определение "size"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(336,16): warning C4273: String::capacity: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(35,12): message : см. предыдущее определение "capacity"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(341,14): warning C4273: String::empty: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(39,10): message : см. предыдущее определение "empty"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(348,14): warning C4273: String::reserve: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(38,10): message : см. предыдущее определение "reserve"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(362,14): warning C4273: String::clear: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(41,10): message : см. предыдущее определение "clear"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(370,14): warning C4273: String::push_back: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(43,10): message : см. предыдущее определение "push_back"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(381,14): warning C4273: String::pop_back: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(45,10): message : см. предыдущее определение "pop_back"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(389,14): warning C4273: String::insert: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(47,10): message : см. предыдущее определение "insert"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(410,14): warning C4273: String::erase: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(48,10): message : см. предыдущее определение "erase"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(428,17): warning C4273: String::operator +: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(51,13): message : см. предыдущее определение "+"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(437,17): warning C4273: String::operator +: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(52,13): message : см. предыдущее определение "+"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(447,17): warning C4273: String::operator +=: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(49,13): message : см. предыдущее определение "+="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(456,17): warning C4273: String::operator +=: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(50,13): message : см. предыдущее определение "+="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(467,14): warning C4273: String::operator ==: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(55,10): message : см. предыдущее определение "=="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(472,14): warning C4273: String::operator !=: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(56,10): message : см. предыдущее определение "!="
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(508,14): warning C4273: String::resize: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(58,10): message : см. предыдущее определение "resize"
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\dllmain.cpp(541,10): warning C4273: String::~String: несовместимое связывание dll
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\framework.h(67,6): message : см. предыдущее определение "{dtor}"
+  StringDLL.vcxproj -> D:\Doc\Studies\FAaP\Denis_Konchik_153503\Qt\lab4\StringDLL\x64\Debug\StringDLL.dll

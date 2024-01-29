@@ -1,0 +1,4 @@
+﻿  4.cpp
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\lab7\14\4.cpp(173,19): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\Doc\Studies\FAaP\Denis_Konchik_153503\lab7\14\4.cpp(235): warning C4715: LetterToInt: значение возвращается не при всех путях выполнения
+  14.vcxproj -> D:\Doc\Studies\FAaP\Denis_Konchik_153503\lab7\x64\Debug\4.exe

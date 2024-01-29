@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Belarus.jpg</file>
+        <file>China.jpg</file>
+        <file>Germany.jpg</file>
+        <file>Italy.jpg</file>
+        <file>Poland.jpg</file>
+        <file>Russia.jpg</file>
+        <file>Spain.jpg</file>
+        <file>Turkey.jpg</file>
+        <file>UK.jpg</file>
+        <file>USA.jpg</file>
+        <file>empty.jpg</file>
+        <file>Jamaica.jpg</file>
+        <file>Ukraine.jpg</file>
+        <file>USSR.jpg</file>
+    </qresource>
+</RCC>

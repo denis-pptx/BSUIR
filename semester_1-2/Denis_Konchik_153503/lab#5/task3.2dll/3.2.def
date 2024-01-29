@@ -1,0 +1,5 @@
+LIBRARY "3.2"
+EXPORTS
+ReverseArray
+ZeroElements
+Output
