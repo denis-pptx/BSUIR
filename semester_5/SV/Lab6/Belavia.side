@@ -1,0 +1,1723 @@
+{
+  "id": "e7a58782-9cd2-43bc-a4ea-7952364a636c",
+  "version": "2.0",
+  "name": "Belavia",
+  "url": "https://belavia.by/",
+  "tests": [{
+    "id": "b0f70684-5564-40d8-a93e-ae15db269c41",
+    "name": "1_LinksWork",
+    "commands": [{
+      "id": "f91aa50a-7918-434a-811d-f93356268ae0",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "224fa5a1-0caf-4dce-9e52-94120df7a0c3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кассы продаж",
+      "targets": [
+        ["linkText=Кассы продаж", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Кассы продаж')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/kontakty/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Кассы продаж')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "441662c5-ef68-4f72-8a76-94b44e86a443",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c667559-057d-4aff-a0c0-0302ddb1e656",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Расписание",
+      "targets": [
+        ["linkText=Расписание", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Расписание')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/time-table/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c0207e52-1e20-4c24-be68-31d5c613a30a",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6aedeb6c-a77a-4deb-8061-522ff319e806",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Табло вылета/прилета",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08d39e9b-3dc5-487f-8645-3e858798c10f",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5d0fadc6-23ec-4371-8bf6-8434eed9c50d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обращения граждан",
+      "targets": [
+        ["linkText=Обращения граждан", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Обращения граждан')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/obrashheniya-grazhdan/')])[2]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d69b001d-1459-42a0-be7b-ef6996252bb6",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3f6de7c8-379e-4cfb-89c7-731e723c7051",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Грузовые перевозки",
+      "targets": [
+        ["linkText=Грузовые перевозки", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Грузовые перевозки')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/perevozka-gruzov/')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "03c367a9-4def-4b36-b735-2d92e861ca01",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a755c389-d65f-4ffb-8769-f9dc71d39311",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Агентам",
+      "targets": [
+        ["linkText=Агентам", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Агентам')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/agentam/')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Агентам')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4f4ac59-d1cd-4914-909b-d8a9f475f780",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f205f6c7-06e4-4d65-a29c-7d79a53413c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Журнал OnAir",
+      "targets": [
+        ["linkText=Журнал OnAir", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Журнал OnAir')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/onair/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Журнал OnAir')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28adc0a9-037d-4256-87ca-400fc7182b18",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fa95aee-35a3-43fb-9c17-b206f922e1b6",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обратная связь",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kontakty/obratnaya-svyaz/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e43b0ed8-a78b-47b8-9e8d-af1aad5cc228",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a71dfd9a-8fa0-4d37-b1bb-5ccd82e1b01c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Для СМИ",
+      "targets": [
+        ["linkText=Для СМИ", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Для СМИ')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/dlya-smi/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Для СМИ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddc3860e-b81e-4c6a-911f-9a09267c3b6e",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9c179330-fc94-4c7c-9b9d-4b251086dc13",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Конфиденциальность",
+      "targets": [
+        ["linkText=Конфиденциальность", "linkText"],
+        ["css=.col-3 > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Конфиденциальность')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/policy')]", "xpath:href"],
+        ["xpath=//div[5]/div[2]/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Конфиденциальность')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55029cd2-20e4-423a-bf37-67a76b2c0f62",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6df7af93-6aec-41b4-a059-a9fa12ad80c7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Все новости",
+      "targets": [
+        ["linkText=Все новости", "linkText"],
+        ["css=.news > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Все новости')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/novosti/')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Все новости')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d00856c6-c804-4855-859e-c6c22f482f6c",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f6cbdb0-c0b3-4c7f-b2a7-27079d72e85d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Все предложения",
+      "targets": [
+        ["linkText=Все предложения", "linkText"],
+        ["css=.offers > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Все предложения')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/predlozheniya/')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div[3]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Все предложения')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "96e40408-742e-4810-a118-4e7efcdd26bd",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5f1471d2-8309-44e7-98db-47e3822e57af",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "6ee89005-6984-4c48-8421-c55d9838a1d2",
+    "name": "2_LinksRightLocation",
+    "commands": [{
+      "id": "f36bb79d-2c54-4792-b8c5-011fb8bbf470",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "65adcd38-1eef-4593-8d41-9d230989d182",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4f0850cd-f4d5-427c-a12f-f03f5c479419",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обратная связь",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kontakty/obratnaya-svyaz/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a90f9cd2-d8b3-4350-a51c-cccd41082ed6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e50d6f63-dae1-4aec-bc45-2f678ab4bd64",
+    "name": "3_CheckValidRegistration",
+    "commands": [{
+      "id": "f0112c39-d575-47e6-b90c-a0c70911fe11",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3da58e12-a564-4e62-88e5-12c7368beb99",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d454b59b-c1d8-4859-99c9-87e2da0783ab",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обратная связь",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kontakty/obratnaya-svyaz/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6031fc4b-da3c-448d-a152-61521c345e19",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9e98ce4d-ae5d-48be-bd0d-e241be19b123",
+    "name": "4_CheckInvalidRegistration",
+    "commands": [{
+      "id": "e1a0d75b-1b20-458f-bd15-008d62eb9eb4",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5fba1618-2892-4a68-9f00-b96c1a06f676",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c07df5a-a620-44df-a1a0-4a090433c5a3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "69371042-a968-424d-a59e-1301948627c9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Еще не зарегистрированы?",
+      "targets": [
+        ["linkText=Еще не зарегистрированы?", "linkText"],
+        ["css=.reg > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Еще не зарегистрированы?')]", "xpath:link"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../registration/')]", "xpath:href"],
+        ["xpath=//form/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Еще не зарегистрированы?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7aa633c0-476d-4c34-adcc-84952053bd01",
+      "comment": "",
+      "command": "click",
+      "target": "css=.display_email > label",
+      "targets": [
+        ["css=.display_email > label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[4]/div[4]/div[3]/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я не согласен(-на) получать новости о программе на мой электронный адрес.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6c78d2d-a64b-4c3f-a4cf-9427cbb0bc6d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) label",
+      "targets": [
+        ["css=.row:nth-child(1) label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я ознакомлен(-на) с политикой конфиденциальности персональных данных авиакомпании и даю согласие на обработку своих персональных данных в программе лояльности «Белавиа Лидер».')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "15cbde0e-1cd4-448d-9b97-7386d191313f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-sm-12 label",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-sm-12 label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я согласен(-на) с правилами программы «Белавиа Лидер»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "b358ad73-aa60-41a9-bcc1-1a8878f9d96e",
+    "name": "5_CheckEmptyEmailRegistration",
+    "commands": [{
+      "id": "95cac8d2-0705-4a49-ab51-94687d07ec34",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "52fa7160-4d1b-438c-b182-ea239c5d227f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3a9fbcaf-507f-4765-a2b2-c9bf7d9d5118",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c968e583-13f5-4ed4-bde7-76fae0f97843",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Еще не зарегистрированы?",
+      "targets": [
+        ["linkText=Еще не зарегистрированы?", "linkText"],
+        ["css=.reg > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Еще не зарегистрированы?')]", "xpath:link"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../registration/')]", "xpath:href"],
+        ["xpath=//form/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Еще не зарегистрированы?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b53e3c00-db1e-43ca-bf95-f993aa7b525c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.display_email > label",
+      "targets": [
+        ["css=.display_email > label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[4]/div[4]/div[3]/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я не согласен(-на) получать новости о программе на мой электронный адрес.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3193318e-efca-4317-b6a1-cead8e581032",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) label",
+      "targets": [
+        ["css=.row:nth-child(1) label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я ознакомлен(-на) с политикой конфиденциальности персональных данных авиакомпании и даю согласие на обработку своих персональных данных в программе лояльности «Белавиа Лидер».')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1b120be-23fa-4500-acd8-e31d1b83bbda",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-sm-12 label",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-sm-12 label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я согласен(-на) с правилами программы «Белавиа Лидер»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ceba97e8-e668-493c-b340-fbb7796178c7",
+    "name": "6_CheckNotificationsRegistration",
+    "commands": [{
+      "id": "fe7e11b3-4ddd-48d2-8330-7be0335acea9",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95a460e0-24e5-437b-b7ee-c7b6de979346",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9db3b55e-a2a5-4932-b6dc-8a969f1ce322",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f18e29af-46a5-485d-9ba7-354996250d9a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Еще не зарегистрированы?",
+      "targets": [
+        ["linkText=Еще не зарегистрированы?", "linkText"],
+        ["css=.reg > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Еще не зарегистрированы?')]", "xpath:link"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '../registration/')]", "xpath:href"],
+        ["xpath=//form/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Еще не зарегистрированы?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bd18764-579e-4184-8fd5-61876a0a0fac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.display_email > label",
+      "targets": [
+        ["css=.display_email > label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[4]/div[4]/div[3]/div/label", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я не согласен(-на) получать новости о программе на мой электронный адрес.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a2c2d4b4-56a1-45aa-b172-04c6f5f75d34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) label",
+      "targets": [
+        ["css=.row:nth-child(1) label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я ознакомлен(-на) с политикой конфиденциальности персональных данных авиакомпании и даю согласие на обработку своих персональных данных в программе лояльности «Белавиа Лидер».')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9f373734-dd07-4ee9-beb5-94f60a6f5f3b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(2) > .col-sm-12 label",
+      "targets": [
+        ["css=.row:nth-child(2) > .col-sm-12 label", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/form/div[5]/div[2]/div/div/label", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Я согласен(-на) с правилами программы «Белавиа Лидер»')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "498a08f4-9e51-4c67-8102-c1cb8dc35fe0",
+    "name": "7_CheckValidAuthorization",
+    "commands": [{
+      "id": "4640e0fe-97b0-409c-aca2-17219ae65a01",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78ad082e-1ec5-4a29-8e1e-7b535fb477a8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e343ff9b-78a3-483e-b8c6-af9690f405bf",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67184567-2731-4587-a615-715f246613dd",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "10013763734"
+    }, {
+      "id": "9eafa202-78c4-4368-9840-94fc5af7e62f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "XdMTsWoY"
+    }, {
+      "id": "93f1f216-1404-4b05-8009-9e4b74d9f684",
+      "comment": "",
+      "command": "click",
+      "target": "name=subm",
+      "targets": [
+        ["name=subm", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='subm']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "50bd8f9f-0015-4ded-b25f-39a749534caf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-text > span",
+      "targets": [
+        ["css=.icon-text > span", "css:finder"],
+        ["xpath=//div[@id='col_2']/div[2]/span[2]/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ce3704a8-41de-4f3e-9abb-fb9958bded38",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.icon-text > span",
+      "targets": [
+        ["css=.icon-text > span", "css:finder"],
+        ["xpath=//div[@id='col_2']/div[2]/span[2]/span", "xpath:idRelative"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": "KONCHYK DZIANIS"
+    }, {
+      "id": "489ed3ab-112b-4456-8ff3-9dcd113f4196",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "df0bd5ed-d708-4c6e-b6cc-8779e11a6993",
+    "name": "8_CheckInvalidAuthorization",
+    "commands": [{
+      "id": "9c0fdacd-b625-40bb-abca-fc3b48a2e1ca",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20d82fb9-a2b3-4f8b-98d8-ced78beffc3e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3417a194-e83e-4bbd-85bd-1cbdeeebe9fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "668d053e-adf7-4a67-a054-c46e8670309f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.article",
+      "targets": [
+        ["css=.article", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "43d433b9-cf65-4d70-8fbe-ec11839b5235",
+      "comment": "",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.form-group:nth-child(1) .form-control", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "111111111"
+    }, {
+      "id": "c098b917-4323-446e-bedb-d0d9f31d180b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form",
+      "targets": [
+        ["css=.form", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div", "xpath:idRelative"],
+        ["xpath=//form/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b42dabb7-1d59-47c3-ab7b-e4ab20dcf950",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.form-group:nth-child(2) .form-control", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "qweqweqweqwe"
+    }, {
+      "id": "cbe0849a-5301-4544-b4e7-ba5232216578",
+      "comment": "",
+      "command": "click",
+      "target": "css=.login_form",
+      "targets": [
+        ["css=.login_form", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f840140-9d68-4eab-9440-1a2b672cb226",
+      "comment": "",
+      "command": "click",
+      "target": "name=subm",
+      "targets": [
+        ["name=subm", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//button[@name='subm']", "xpath:attributes"],
+        ["xpath=//div[@id='page_content']/div/div/div/form/div[2]/p/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2a890bab-07ac-46b9-a748-16126daf4b95",
+      "comment": "",
+      "command": "click",
+      "target": "css=.bs-callout",
+      "targets": [
+        ["css=.bs-callout", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c89c2bb-248e-48ca-a58a-138ffa619628",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h4",
+      "targets": [
+        ["css=h4", "css:finder"],
+        ["xpath=//div[@id='page_content']/div/div/div/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'Не удалось авторизовать пользователя. Возможно, логин или пароль указаны неверно.')]", "xpath:innerText"]
+      ],
+      "value": "Не удалось авторизовать пользователя. Возможно, логин или пароль указаны неверно."
+    }]
+  }, {
+    "id": "f7921b1d-2650-4776-8bd1-a6176a410495",
+    "name": "9_CheckInput",
+    "commands": [{
+      "id": "3637f411-5191-4632-b77e-85f4dc463297",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b74fa69-88e8-466c-87b5-d546f3034688",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "70836adc-d715-4350-96be-b084979ebca2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Обратная связь",
+      "targets": [
+        ["linkText=Обратная связь", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Обратная связь')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/kontakty/obratnaya-svyaz/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Обратная связь')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a83c91c9-f1d7-4402-88f7-258a12a570aa",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1903024c-6cc9-4c47-8915-fa2c046263ad",
+    "name": "10_CheckFoundItems",
+    "commands": [{
+      "id": "fb4de58c-f18f-40f6-8a7e-f753c95d58a8",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9bfb5cdb-84be-45ee-b5ad-ca7423f10ab1",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fa8d413-eb47-4d77-8a19-6904f15c0502",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Купить",
+      "targets": [
+        ["linkText=Купить", "linkText"],
+        ["css=.tab-title:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Купить')])[3]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#ibe')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cbed36b0-a865-43fd-a739-b9e1ab1da5f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-mb-12:nth-child(1) > .wrapper > label",
+      "targets": [
+        ["css=.col-mb-12:nth-child(1) > .wrapper > label", "css:finder"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Откуда')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "36e5c959-0886-4208-8da0-3d940d97a490",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "А"
+    }, {
+      "id": "766e0eb2-426a-42b4-b6b5-70bf9cb8836b",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li/a",
+      "targets": [
+        ["id=ui-id-26", "id"],
+        ["linkText=Абу-Даби (AUH), AE", "linkText"],
+        ["css=#ui-id-26", "css:finder"],
+        ["xpath=//a[@id='ui-id-26']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Абу-Даби (AUH), AE')]", "xpath:innerText"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }, {
+      "id": "68cefbe2-09ba-4d80-85d5-ad9a8ea198a7",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li[2]/a",
+      "targets": [
+        ["id=ui-id-27", "id"],
+        ["linkText=Астана (NQZ), KZ", "linkText"],
+        ["css=#ui-id-27", "css:finder"],
+        ["xpath=//a[@id='ui-id-27']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Астана (NQZ), KZ')]", "xpath:innerText"]
+      ],
+      "value": "Астана (NQZ), KZ"
+    }, {
+      "id": "3ec05f5d-a29f-4c6a-bff7-09b18d445266",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }]
+  }, {
+    "id": "58774538-32cc-4182-a5a4-8aa78d8884e9",
+    "name": "11_CheckNotFoundItems",
+    "commands": [{
+      "id": "d4d05218-7798-4af1-abbf-7c65099f69cf",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ee7ff5f5-3a2c-4629-be92-b04d1daa0095",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d5474f7-13c6-47a7-b72a-cb6cee450876",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Купить",
+      "targets": [
+        ["linkText=Купить", "linkText"],
+        ["css=.tab-title:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Купить')])[3]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#ibe')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a3753aa-cc5b-475b-a826-732a60e1bd6a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-mb-12:nth-child(1) > .wrapper > label",
+      "targets": [
+        ["css=.col-mb-12:nth-child(1) > .wrapper > label", "css:finder"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Откуда')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "45d9d576-d119-48ca-a2dd-4fa4cad5e72b",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "А"
+    }, {
+      "id": "37684dcd-17f5-48fd-a4c6-e32239ce32a9",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li/a",
+      "targets": [
+        ["id=ui-id-26", "id"],
+        ["linkText=Абу-Даби (AUH), AE", "linkText"],
+        ["css=#ui-id-26", "css:finder"],
+        ["xpath=//a[@id='ui-id-26']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Абу-Даби (AUH), AE')]", "xpath:innerText"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }, {
+      "id": "c620b94d-e779-42c3-aa43-4f47d6064a8c",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li[2]/a",
+      "targets": [
+        ["id=ui-id-27", "id"],
+        ["linkText=Астана (NQZ), KZ", "linkText"],
+        ["css=#ui-id-27", "css:finder"],
+        ["xpath=//a[@id='ui-id-27']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Астана (NQZ), KZ')]", "xpath:innerText"]
+      ],
+      "value": "Астана (NQZ), KZ"
+    }, {
+      "id": "0834fce3-0f20-43ae-a950-05bb00c341d7",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }]
+  }, {
+    "id": "98ce0f00-dbe4-4506-84db-0f1403615a81",
+    "name": "12_CheckEmptySearch",
+    "commands": [{
+      "id": "65efcd1b-099b-4f6f-bc13-75db2178dd08",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aedb0a14-2932-4516-8242-716006a3fdb7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbee3081-cbc0-4160-9f11-b754056d8b94",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Купить",
+      "targets": [
+        ["linkText=Купить", "linkText"],
+        ["css=.tab-title:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Купить')])[3]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#ibe')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e832205f-d94b-4ee8-acdb-b44998328ea4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-mb-12:nth-child(1) > .wrapper > label",
+      "targets": [
+        ["css=.col-mb-12:nth-child(1) > .wrapper > label", "css:finder"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/label", "xpath:idRelative"],
+        ["xpath=//label", "xpath:position"],
+        ["xpath=//label[contains(.,'Откуда')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "12af8b3e-8edd-45c6-9de8-3b51b9566e1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "А"
+    }, {
+      "id": "d34bb22e-bee4-4b30-a2bb-6c702a7fea00",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li/a",
+      "targets": [
+        ["id=ui-id-26", "id"],
+        ["linkText=Абу-Даби (AUH), AE", "linkText"],
+        ["css=#ui-id-26", "css:finder"],
+        ["xpath=//a[@id='ui-id-26']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Абу-Даби (AUH), AE')]", "xpath:innerText"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }, {
+      "id": "7e1fffae-2d25-4470-9306-03a9837ba2e5",
+      "comment": "",
+      "command": "assertText",
+      "target": "xpath=//ul[@id='ui-id-2']/li[2]/a",
+      "targets": [
+        ["id=ui-id-27", "id"],
+        ["linkText=Астана (NQZ), KZ", "linkText"],
+        ["css=#ui-id-27", "css:finder"],
+        ["xpath=//a[@id='ui-id-27']", "xpath:attributes"],
+        ["xpath=//ul[@id='ui-id-2']/li[2]/a", "xpath:idRelative"],
+        ["xpath=//body/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Астана (NQZ), KZ')]", "xpath:innerText"]
+      ],
+      "value": "Астана (NQZ), KZ"
+    }, {
+      "id": "01c33070-9b0d-418a-8729-b3714fc5e22a",
+      "comment": "",
+      "command": "type",
+      "target": "id=OriginLocation_Combobox",
+      "targets": [
+        ["id=OriginLocation_Combobox", "id"],
+        ["name=OriginLocation_Combobox", "name"],
+        ["css=#OriginLocation_Combobox", "css:finder"],
+        ["xpath=//input[@id='OriginLocation_Combobox']", "xpath:attributes"],
+        ["xpath=//div[@id='ibe']/form/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Абу-Даби (AUH), AE"
+    }]
+  }, {
+    "id": "615990c7-4821-4bea-8dd3-bb43aa818258",
+    "name": "13_CheckChangeLanguage",
+    "commands": [{
+      "id": "42344a53-ef31-456b-b4fe-5cb7ea538d41",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51d46119-381f-4111-bdd5-d666f4ca413a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cae25eb3-b8a2-4381-8461-29f87dc98187",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=lang-iso",
+      "targets": [
+        ["id=lang-iso", "id"],
+        ["css=#select-lang > #lang-iso", "css:finder"],
+        ["xpath=//span[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='select-lang']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": "RU"
+    }, {
+      "id": "a131b73e-c5e3-4423-9e0c-4a04831802d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-down-dir",
+      "targets": [
+        ["css=.icon-down-dir", "css:finder"],
+        ["xpath=//a[@id='select-lang']/span[3]/i", "xpath:idRelative"],
+        ["xpath=//span[3]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "543ca354-08c0-4057-8602-5f885a05017a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=English",
+      "targets": [
+        ["linkText=English", "linkText"],
+        ["css=.menu-content > ul > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'English')]", "xpath:link"],
+        ["xpath=//div[@id='lang-menu']/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://en.belavia.by/?newSite=1')]", "xpath:href"],
+        ["xpath=//li[2]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'English')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "724bc18f-9f4a-454d-9f1e-3db081316826",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=lang-iso",
+      "targets": [
+        ["id=lang-iso", "id"],
+        ["css=#select-lang > #lang-iso", "css:finder"],
+        ["xpath=//span[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='select-lang']/span[2]", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span[2]", "xpath:position"]
+      ],
+      "value": "EN"
+    }, {
+      "id": "b1c13d61-8012-4919-875c-2909f9377c63",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=#ffp-account > #lang-iso",
+      "targets": [
+        ["css=#ffp-account > #lang-iso", "css:finder"],
+        ["xpath=//div[@id='lang-iso']", "xpath:attributes"],
+        ["xpath=//a[@id='ffp-account']/div[2]", "xpath:idRelative"],
+        ["xpath=//a/div[2]", "xpath:position"]
+      ],
+      "value": "Personal\\naccount"
+    }, {
+      "id": "f536936e-0596-4f5e-a9d1-5bad22de4d41",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Book Flights",
+      "targets": [
+        ["linkText=Book Flights", "linkText"],
+        ["css=.tab-title:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Book Flights')])[2]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#ibe')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/a", "xpath:position"]
+      ],
+      "value": "Book Flights"
+    }, {
+      "id": "424a4f15-eb86-4f90-ac95-a8896739b1a1",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Online Check-in",
+      "targets": [
+        ["linkText=Online Check-in", "linkText"],
+        ["css=.tab-title:nth-child(3) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Online Check-in')])[2]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#wci')])[2]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[3]/a", "xpath:position"]
+      ],
+      "value": "Online Check-in"
+    }, {
+      "id": "71d72bfe-72cb-45b5-a5a5-442315655db0",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Booking status",
+      "targets": [
+        ["linkText=Booking status", "linkText"],
+        ["css=.tab-title:nth-child(5) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Booking status')])[3]", "xpath:link"],
+        ["xpath=//div[@id='navtab']/div/div[5]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#trip-case')])[2]", "xpath:href"],
+        ["xpath=//div[5]/a", "xpath:position"]
+      ],
+      "value": "Booking status"
+    }, {
+      "id": "d132aebe-5b58-4cf4-a36f-15cc43259bbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Offers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "03d6c1cf-3c4e-4690-a6d9-56b687751868",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Offers')]", "xpath:innerText"]
+      ],
+      "value": "Offers"
+    }, {
+      "id": "b8c7c6c7-a1a1-4630-a2b6-83c73a08f07a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-h1",
+      "targets": [
+        ["css=.t-h1", "css:finder"],
+        ["xpath=//div[4]/div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dc97f75-6ec9-42e3-90c8-c113eb735d2c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.t-h1",
+      "targets": [
+        ["css=.t-h1", "css:finder"],
+        ["xpath=//div[4]/div[3]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": "News"
+    }, {
+      "id": "7f472c4c-1aae-4cad-8343-53de5953c8f9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.news-panel",
+      "targets": [
+        ["css=.news-panel", "css:finder"],
+        ["xpath=//div[4]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "66bccd73-f30e-4827-9952-8ccc76cefd4e",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=All news",
+      "targets": [
+        ["linkText=All news", "linkText"],
+        ["css=.news > a", "css:finder"],
+        ["xpath=//a[contains(text(),'All news')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, '/news/')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'All news')]", "xpath:innerText"]
+      ],
+      "value": "All news"
+    }, {
+      "id": "af9ad934-ac70-4fb6-93c4-f4fda07b5337",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Ticket offices",
+      "targets": [
+        ["linkText=Ticket offices", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Ticket offices')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/contacts/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li/a", "xpath:position"]
+      ],
+      "value": "Ticket offices"
+    }, {
+      "id": "294b18ef-4964-4a96-86da-7481c730b752",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Timetable",
+      "targets": [
+        ["linkText=Timetable", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Timetable')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/time-table/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": "Timetable"
+    }, {
+      "id": "7ddf06e3-e884-48ce-8360-d368c96f3360",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Arrival and Departure",
+      "targets": [
+        ["linkText=Arrival and Departure", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Arrival and Departure')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/table/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Arrival and Departure')]", "xpath:innerText"]
+      ],
+      "value": "Arrival and Departure"
+    }, {
+      "id": "b6a82896-cd6b-4dc5-a8cf-8c53079ed5f5",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Carriage of cargo",
+      "targets": [
+        ["linkText=Carriage of cargo", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(4) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Carriage of cargo')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/carriage_of_cargo/')])[4]", "xpath:href"],
+        ["xpath=//div/ul/li[4]/a", "xpath:position"]
+      ],
+      "value": "Carriage of cargo"
+    }, {
+      "id": "cedc15a9-7f83-404c-9cac-3295548bc140",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=For agents",
+      "targets": [
+        ["linkText=For agents", "linkText"],
+        ["css=ul:nth-child(1) > li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'For agents')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[5]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/agents/')]", "xpath:href"],
+        ["xpath=//div/ul/li[5]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'For agents')]", "xpath:innerText"]
+      ],
+      "value": "For agents"
+    }, {
+      "id": "a264eebb-47f0-4c38-b4be-386d8ad3d3a2",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=OnAir magazine",
+      "targets": [
+        ["linkText=OnAir magazine", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'OnAir magazine')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/onair/')]", "xpath:href"],
+        ["xpath=//div/div/div/div/ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'OnAir magazine')]", "xpath:innerText"]
+      ],
+      "value": "OnAir magazine"
+    }, {
+      "id": "44a4d9bc-93fd-4564-8c45-22d8d41d3766",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Feedback",
+      "targets": [
+        ["linkText=Feedback", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Feedback')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/contacts/feedback/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Feedback')]", "xpath:innerText"]
+      ],
+      "value": "Feedback"
+    }, {
+      "id": "1fe3d64f-7196-40c9-b6a1-589f22b87b18",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=For Mass Media",
+      "targets": [
+        ["linkText=For Mass Media", "linkText"],
+        ["css=.main > ul:nth-child(2) > li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'For Mass Media')]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul[2]/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/mass_media/')]", "xpath:href"],
+        ["xpath=//ul[2]/li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'For Mass Media')]", "xpath:innerText"]
+      ],
+      "value": "For Mass Media"
+    }, {
+      "id": "f0185631-90e9-4683-908e-e7bf941ebb74",
+      "comment": "",
+      "command": "click",
+      "target": "css=.t-h3:nth-child(1)",
+      "targets": [
+        ["css=.t-h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Information Office')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f7a331f2-1f3d-4482-8083-c8abe768a28a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.t-h3:nth-child(1)",
+      "targets": [
+        ["css=.t-h3:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[2]/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Information Office')]", "xpath:innerText"]
+      ],
+      "value": "Information Office"
+    }, {
+      "id": "21d12051-3c33-4c3e-af68-a1eb84baa730",
+      "comment": "",
+      "command": "click",
+      "target": "css=.quick-links > div:nth-child(3)",
+      "targets": [
+        ["css=.quick-links > div:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[3]", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5cbf365b-94b8-4139-986b-bc7bbc2c3237",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(3) > div > div > span:nth-child(2)",
+      "targets": [
+        ["css=div:nth-child(3) > div > div > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[3]/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'220004')]", "xpath:innerText"]
+      ],
+      "value": "220004"
+    }, {
+      "id": "e64184a1-c26d-466f-bad0-7af93b9d548d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-title",
+      "targets": [
+        ["css=.address-title", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'BELAVIA - Belarusian Airlines')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f750ce80-0286-4f35-97ea-375cdec1d3ab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-title",
+      "targets": [
+        ["css=.address-title", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'BELAVIA - Belarusian Airlines')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44b47677-cd89-4ec8-9b41-aa398dd6703b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.address-title",
+      "targets": [
+        ["css=.address-title", "css:finder"],
+        ["xpath=//div[@id='footer']/div/div/div/div[3]/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div[3]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'BELAVIA - Belarusian Airlines')]", "xpath:innerText"]
+      ],
+      "value": "BELAVIA - Belarusian Airlines"
+    }]
+  }, {
+    "id": "11181ef8-eeb7-4fde-9068-e3009ab9f749",
+    "name": "14_GoToIndex",
+    "commands": [{
+      "id": "2f5d1962-e6d4-4c0e-b3f4-e670b6577128",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "680d7dda-36a1-4c28-b702-12c5a4367d97",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ed2f8c91-42bb-4df6-8130-0beb286e0939",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Расписание",
+      "targets": [
+        ["linkText=Расписание", "linkText"],
+        ["css=.main > ul:nth-child(1) > li:nth-child(2) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Расписание')])[2]", "xpath:link"],
+        ["xpath=//div[@id='footer']/div/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/time-table/')])[2]", "xpath:href"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "96157127-bb60-405c-a2dc-6c7cb7aac63f",
+      "comment": "",
+      "command": "click",
+      "target": "css=img:nth-child(2)",
+      "targets": [
+        ["css=img:nth-child(2)", "css:finder"],
+        ["xpath=//img[@alt='БЕЛАВИА - Авиакомпания Республики Беларусь']", "xpath:img"],
+        ["xpath=//div[@id='header']/div/div/div/a/picture/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8d2f74de-4603-47c5-afcb-ba07ea19d89f",
+    "name": "15_CheckDropDown",
+    "commands": [{
+      "id": "636e9e27-84f6-40cf-ad94-5a4ce7c0c84b",
+      "comment": "",
+      "command": "open",
+      "target": "https://belavia.by/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2c3ce8a0-2da8-4cfd-97fd-099116b8ba70",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "699x931",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "08b067d1-f18b-49a3-b2d3-16e9bba77119",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hamburger-bar",
+      "targets": [
+        ["css=.hamburger-bar", "css:finder"],
+        ["xpath=//a[@id='select-main-menu']/span", "xpath:idRelative"],
+        ["xpath=//span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd4df475-875b-4703-94a5-940db68f7551",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Купить билет",
+      "targets": [
+        ["linkText=Купить билет", "linkText"],
+        ["css=.plane > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Купить билет')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/div[2]/ul/li/div/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[2]", "xpath:href"],
+        ["xpath=//li/div/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Купить билет')]", "xpath:innerText"]
+      ],
+      "value": "Купить билет"
+    }, {
+      "id": "80ded0e9-374d-43b8-a298-e9fc71530686",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Мои бронирования",
+      "targets": [
+        ["linkText=Мои бронирования", "linkText"],
+        ["css=.booking > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Мои бронирования')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/div[2]/ul/li/div/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[3]", "xpath:href"],
+        ["xpath=//div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Мои бронирования')]", "xpath:innerText"]
+      ],
+      "value": "Мои бронирования"
+    }, {
+      "id": "c219ce16-d1c0-42e3-bafa-c3cec578a954",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Информация и услуги",
+      "targets": [
+        ["linkText=Информация и услуги", "linkText"],
+        ["css=.info > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Информация и услуги')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/div[2]/ul/li/div/div/div/ul[2]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[4]", "xpath:href"],
+        ["xpath=//ul[2]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Информация и услуги')]", "xpath:innerText"]
+      ],
+      "value": "Информация и услуги"
+    }, {
+      "id": "a83f9e5e-a899-42a9-aeb0-6e0c7da32ad5",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Компания",
+      "targets": [
+        ["linkText=Компания", "linkText"],
+        ["css=.company > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Компания')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/div[2]/ul/li/div/div/div/ul[3]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[10]", "xpath:href"],
+        ["xpath=//ul[3]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Компания')]", "xpath:innerText"]
+      ],
+      "value": "Компания"
+    }, {
+      "id": "f427767e-c9bc-4a72-959b-ab45bd163f2c",
+      "comment": "",
+      "command": "assertText",
+      "target": "linkText=Белавиа Лидер",
+      "targets": [
+        ["linkText=Белавиа Лидер", "linkText"],
+        ["css=.ffp > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Белавиа Лидер')]", "xpath:link"],
+        ["xpath=//div[@id='header']/div/div/div[2]/ul/li/div/div/div/ul[4]/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[12]", "xpath:href"],
+        ["xpath=//ul[4]/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Белавиа Лидер')]", "xpath:innerText"]
+      ],
+      "value": "Белавиа Лидер"
+    }]
+  }],
+  "suites": [{
+    "id": "c05b88e0-2242-466d-abcd-18b94c673f95",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://belavia.by/"],
+  "plugins": []
+}
