@@ -1,0 +1,722 @@
+[
+    {
+        "duration": 3,
+        "durationOMP": 47,
+        "n": 2
+    },
+    {
+        "duration": 3,
+        "durationOMP": 12,
+        "n": 3
+    },
+    {
+        "duration": 4,
+        "durationOMP": 22,
+        "n": 4
+    },
+    {
+        "duration": 6,
+        "durationOMP": 30,
+        "n": 5
+    },
+    {
+        "duration": 9,
+        "durationOMP": 39,
+        "n": 6
+    },
+    {
+        "duration": 10,
+        "durationOMP": 51,
+        "n": 7
+    },
+    {
+        "duration": 11,
+        "durationOMP": 61,
+        "n": 8
+    },
+    {
+        "duration": 14,
+        "durationOMP": 63,
+        "n": 9
+    },
+    {
+        "duration": 15,
+        "durationOMP": 76,
+        "n": 10
+    },
+    {
+        "duration": 18,
+        "durationOMP": 88,
+        "n": 11
+    },
+    {
+        "duration": 23,
+        "durationOMP": 94,
+        "n": 12
+    },
+    {
+        "duration": 27,
+        "durationOMP": 106,
+        "n": 13
+    },
+    {
+        "duration": 30,
+        "durationOMP": 117,
+        "n": 14
+    },
+    {
+        "duration": 37,
+        "durationOMP": 124,
+        "n": 15
+    },
+    {
+        "duration": 41,
+        "durationOMP": 136,
+        "n": 16
+    },
+    {
+        "duration": 49,
+        "durationOMP": 161,
+        "n": 17
+    },
+    {
+        "duration": 60,
+        "durationOMP": 153,
+        "n": 18
+    },
+    {
+        "duration": 60,
+        "durationOMP": 168,
+        "n": 19
+    },
+    {
+        "duration": 65,
+        "durationOMP": 169,
+        "n": 20
+    },
+    {
+        "duration": 75,
+        "durationOMP": 187,
+        "n": 21
+    },
+    {
+        "duration": 84,
+        "durationOMP": 204,
+        "n": 22
+    },
+    {
+        "duration": 95,
+        "durationOMP": 203,
+        "n": 23
+    },
+    {
+        "duration": 104,
+        "durationOMP": 216,
+        "n": 24
+    },
+    {
+        "duration": 115,
+        "durationOMP": 232,
+        "n": 25
+    },
+    {
+        "duration": 130,
+        "durationOMP": 247,
+        "n": 26
+    },
+    {
+        "duration": 143,
+        "durationOMP": 247,
+        "n": 27
+    },
+    {
+        "duration": 153,
+        "durationOMP": 261,
+        "n": 28
+    },
+    {
+        "duration": 167,
+        "durationOMP": 290,
+        "n": 29
+    },
+    {
+        "duration": 185,
+        "durationOMP": 306,
+        "n": 30
+    },
+    {
+        "duration": 202,
+        "durationOMP": 308,
+        "n": 31
+    },
+    {
+        "duration": 223,
+        "durationOMP": 320,
+        "n": 32
+    },
+    {
+        "duration": 239,
+        "durationOMP": 322,
+        "n": 33
+    },
+    {
+        "duration": 251,
+        "durationOMP": 363,
+        "n": 34
+    },
+    {
+        "duration": 278,
+        "durationOMP": 379,
+        "n": 35
+    },
+    {
+        "duration": 297,
+        "durationOMP": 399,
+        "n": 36
+    },
+    {
+        "duration": 322,
+        "durationOMP": 409,
+        "n": 37
+    },
+    {
+        "duration": 343,
+        "durationOMP": 408,
+        "n": 38
+    },
+    {
+        "duration": 373,
+        "durationOMP": 449,
+        "n": 39
+    },
+    {
+        "duration": 406,
+        "durationOMP": 441,
+        "n": 40
+    },
+    {
+        "duration": 427,
+        "durationOMP": 481,
+        "n": 41
+    },
+    {
+        "duration": 452,
+        "durationOMP": 500,
+        "n": 42
+    },
+    {
+        "duration": 486,
+        "durationOMP": 483,
+        "n": 43
+    },
+    {
+        "duration": 513,
+        "durationOMP": 525,
+        "n": 44
+    },
+    {
+        "duration": 546,
+        "durationOMP": 543,
+        "n": 45
+    },
+    {
+        "duration": 582,
+        "durationOMP": 546,
+        "n": 46
+    },
+    {
+        "duration": 620,
+        "durationOMP": 559,
+        "n": 47
+    },
+    {
+        "duration": 658,
+        "durationOMP": 594,
+        "n": 48
+    },
+    {
+        "duration": 691,
+        "durationOMP": 631,
+        "n": 49
+    },
+    {
+        "duration": 729,
+        "durationOMP": 670,
+        "n": 50
+    },
+    {
+        "duration": 1222,
+        "durationOMP": 920,
+        "n": 60
+    },
+    {
+        "duration": 1904,
+        "durationOMP": 1188,
+        "n": 70
+    },
+    {
+        "duration": 2830,
+        "durationOMP": 1556,
+        "n": 80
+    },
+    {
+        "duration": 3956,
+        "durationOMP": 1992,
+        "n": 90
+    },
+    {
+        "duration": 5378,
+        "durationOMP": 2918,
+        "n": 100
+    },
+    {
+        "duration": 7064,
+        "durationOMP": 3087,
+        "n": 110
+    },
+    {
+        "duration": 9111,
+        "durationOMP": 3735,
+        "n": 120
+    },
+    {
+        "duration": 11505,
+        "durationOMP": 4516,
+        "n": 130
+    },
+    {
+        "duration": 14242,
+        "durationOMP": 5356,
+        "n": 140
+    },
+    {
+        "duration": 17299,
+        "durationOMP": 6419,
+        "n": 150
+    },
+    {
+        "duration": 20818,
+        "durationOMP": 7637,
+        "n": 160
+    },
+    {
+        "duration": 24475,
+        "durationOMP": 8873,
+        "n": 170
+    },
+    {
+        "duration": 28568,
+        "durationOMP": 10188,
+        "n": 180
+    },
+    {
+        "duration": 33781,
+        "durationOMP": 11683,
+        "n": 190
+    },
+    {
+        "duration": 38484,
+        "durationOMP": 13311,
+        "n": 200
+    },
+    {
+        "duration": 44240,
+        "durationOMP": 15188,
+        "n": 210
+    },
+    {
+        "duration": 50947,
+        "durationOMP": 17151,
+        "n": 220
+    },
+    {
+        "duration": 57996,
+        "durationOMP": 23243,
+        "n": 230
+    },
+    {
+        "duration": 67531,
+        "durationOMP": 21801,
+        "n": 240
+    },
+    {
+        "duration": 73848,
+        "durationOMP": 24773,
+        "n": 250
+    },
+    {
+        "duration": 85987,
+        "durationOMP": 27900,
+        "n": 260
+    },
+    {
+        "duration": 92431,
+        "durationOMP": 30812,
+        "n": 270
+    },
+    {
+        "duration": 103319,
+        "durationOMP": 34579,
+        "n": 280
+    },
+    {
+        "duration": 115840,
+        "durationOMP": 45858,
+        "n": 290
+    },
+    {
+        "duration": 126724,
+        "durationOMP": 43586,
+        "n": 300
+    },
+    {
+        "duration": 152291,
+        "durationOMP": 51458,
+        "n": 310
+    },
+    {
+        "duration": 169500,
+        "durationOMP": 59270,
+        "n": 320
+    },
+    {
+        "duration": 188293,
+        "durationOMP": 56341,
+        "n": 330
+    },
+    {
+        "duration": 201824,
+        "durationOMP": 663880,
+        "n": 340
+    },
+    {
+        "duration": 217637,
+        "durationOMP": 72395,
+        "n": 350
+    },
+    {
+        "duration": 236810,
+        "durationOMP": 85702,
+        "n": 360
+    },
+    {
+        "duration": 298118,
+        "durationOMP": 104178,
+        "n": 370
+    },
+    {
+        "duration": 323098,
+        "durationOMP": 119811,
+        "n": 380
+    },
+    {
+        "duration": 332039,
+        "durationOMP": 121504,
+        "n": 390
+    },
+    {
+        "duration": 348926,
+        "durationOMP": 132884,
+        "n": 400
+    },
+    {
+        "duration": 377535,
+        "durationOMP": 143460,
+        "n": 410
+    },
+    {
+        "duration": 403678,
+        "durationOMP": 165681,
+        "n": 420
+    },
+    {
+        "duration": 423245,
+        "durationOMP": 675210,
+        "n": 430
+    },
+    {
+        "duration": 459523,
+        "durationOMP": 170707,
+        "n": 440
+    },
+    {
+        "duration": 506479,
+        "durationOMP": 186203,
+        "n": 450
+    },
+    {
+        "duration": 546329,
+        "durationOMP": 192925,
+        "n": 460
+    },
+    {
+        "duration": 562309,
+        "durationOMP": 207163,
+        "n": 470
+    },
+    {
+        "duration": 596414,
+        "durationOMP": 205546,
+        "n": 480
+    },
+    {
+        "duration": 586073,
+        "durationOMP": 199855,
+        "n": 490
+    },
+    {
+        "duration": 613912,
+        "durationOMP": 210745,
+        "n": 500
+    },
+    {
+        "duration": 649403,
+        "durationOMP": 220657,
+        "n": 510
+    },
+    {
+        "duration": 682693,
+        "durationOMP": 234164,
+        "n": 520
+    },
+    {
+        "duration": 734364,
+        "durationOMP": 246300,
+        "n": 530
+    },
+    {
+        "duration": 763216,
+        "durationOMP": 259200,
+        "n": 540
+    },
+    {
+        "duration": 810272,
+        "durationOMP": 273098,
+        "n": 550
+    },
+    {
+        "duration": 854977,
+        "durationOMP": 287064,
+        "n": 560
+    },
+    {
+        "duration": 893622,
+        "durationOMP": 301984,
+        "n": 570
+    },
+    {
+        "duration": 942985,
+        "durationOMP": 317210,
+        "n": 580
+    },
+    {
+        "duration": 992922,
+        "durationOMP": 332545,
+        "n": 590
+    },
+    {
+        "duration": 1032685,
+        "durationOMP": 349815,
+        "n": 600
+    },
+    {
+        "duration": 1094250,
+        "durationOMP": 365565,
+        "n": 610
+    },
+    {
+        "duration": 1152100,
+        "durationOMP": 384078,
+        "n": 620
+    },
+    {
+        "duration": 1208350,
+        "durationOMP": 403183,
+        "n": 630
+    },
+    {
+        "duration": 1280950,
+        "durationOMP": 421416,
+        "n": 640
+    },
+    {
+        "duration": 1326822,
+        "durationOMP": 471105,
+        "n": 650
+    },
+    {
+        "duration": 1392974,
+        "durationOMP": 463792,
+        "n": 660
+    },
+    {
+        "duration": 1472594,
+        "durationOMP": 480679,
+        "n": 670
+    },
+    {
+        "duration": 1538255,
+        "durationOMP": 501500,
+        "n": 680
+    },
+    {
+        "duration": 1582342,
+        "durationOMP": 525436,
+        "n": 690
+    },
+    {
+        "duration": 1665089,
+        "durationOMP": 548117,
+        "n": 700
+    },
+    {
+        "duration": 1720207,
+        "durationOMP": 583098,
+        "n": 710
+    },
+    {
+        "duration": 1823323,
+        "durationOMP": 599283,
+        "n": 720
+    },
+    {
+        "duration": 1883979,
+        "durationOMP": 627118,
+        "n": 730
+    },
+    {
+        "duration": 1957597,
+        "durationOMP": 649963,
+        "n": 740
+    },
+    {
+        "duration": 2021923,
+        "durationOMP": 673325,
+        "n": 750
+    },
+    {
+        "duration": 2112856,
+        "durationOMP": 702737,
+        "n": 760
+    },
+    {
+        "duration": 2183566,
+        "durationOMP": 728916,
+        "n": 770
+    },
+    {
+        "duration": 2292568,
+        "durationOMP": 758146,
+        "n": 780
+    },
+    {
+        "duration": 2387028,
+        "durationOMP": 786504,
+        "n": 790
+    },
+    {
+        "duration": 2488410,
+        "durationOMP": 813538,
+        "n": 800
+    },
+    {
+        "duration": 2590835,
+        "durationOMP": 841393,
+        "n": 810
+    },
+    {
+        "duration": 2706715,
+        "durationOMP": 875809,
+        "n": 820
+    },
+    {
+        "duration": 2746184,
+        "durationOMP": 906374,
+        "n": 830
+    },
+    {
+        "duration": 2866693,
+        "durationOMP": 939446,
+        "n": 840
+    },
+    {
+        "duration": 3001323,
+        "durationOMP": 969811,
+        "n": 850
+    },
+    {
+        "duration": 3056647,
+        "durationOMP": 1017304,
+        "n": 860
+    },
+    {
+        "duration": 3145192,
+        "durationOMP": 1041479,
+        "n": 870
+    },
+    {
+        "duration": 3277233,
+        "durationOMP": 1076681,
+        "n": 880
+    },
+    {
+        "duration": 3376480,
+        "durationOMP": 1130979,
+        "n": 890
+    },
+    {
+        "duration": 3515045,
+        "durationOMP": 1153513,
+        "n": 900
+    },
+    {
+        "duration": 3620086,
+        "durationOMP": 1189615,
+        "n": 910
+    },
+    {
+        "duration": 3737239,
+        "durationOMP": 1232041,
+        "n": 920
+    },
+    {
+        "duration": 3840099,
+        "durationOMP": 1275807,
+        "n": 930
+    },
+    {
+        "duration": 3970046,
+        "durationOMP": 1318574,
+        "n": 940
+    },
+    {
+        "duration": 4103894,
+        "durationOMP": 1361500,
+        "n": 950
+    },
+    {
+        "duration": 4214840,
+        "durationOMP": 1401553,
+        "n": 960
+    },
+    {
+        "duration": 4371532,
+        "durationOMP": 1445890,
+        "n": 970
+    },
+    {
+        "duration": 4531654,
+        "durationOMP": 1493001,
+        "n": 980
+    },
+    {
+        "duration": 4674359,
+        "durationOMP": 1529895,
+        "n": 990
+    },
+    {
+        "duration": 4811732,
+        "durationOMP": 1601640,
+        "n": 1000
+    }
+]
