@@ -1,0 +1,49 @@
+﻿@using Domain.Entities
+@using Services
+@implements IDisposable
+@using Microsoft.AspNetCore.SignalR.Client
+@inject ClientService clientService;
+@inject HubConnection hubConnection;
+
+<h3>RoomList</h3>
+<div id="roomList">
+    @if (_rooms.Count() != 0)
+    {
+        <table>
+            <tr>
+                <th>Id</th>
+                <th>Имя</th>
+                <th>Количество участников</th>
+            </tr>
+            @foreach (var room in _rooms)
+            {
+                <tr>
+                    <td>@room.Id</td>
+                    <td>@room.Name</td>
+                    <td>@room.Users.Count</td>
+                </tr>
+            }
+
+        </table>
+
+    }
+</div>
+
+@code {
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            clientService.RoomListChanged += (rooms) => { _rooms = rooms; InvokeAsync(StateHasChanged); };
+            hubConnection.On<Domain.Entities.Room, User>("ShowRoom", clientService.ShowRoom);
+        }
+    }
+
+    public void Dispose()
+    {
+        clientService.RoomListChanged += (rooms) => { _rooms = rooms; InvokeAsync(StateHasChanged); };
+    }
+
+    public List<Room> _rooms = new();
+}

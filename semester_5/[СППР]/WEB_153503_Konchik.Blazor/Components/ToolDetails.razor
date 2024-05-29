@@ -1,0 +1,38 @@
+﻿@using Domain.Entities;
+
+<style>
+	.tool-details-container {
+		display: flex;
+	}
+	.tool-image {
+		flex: 0 0 auto;
+		margin-right: 20px;
+		border: 1px solid black;
+	}
+	.tool-info {
+		flex: 1 1 auto;
+	}
+</style>
+
+
+@if (SelectedTool is not null)
+{
+	<div class="tool-details-container">
+		<div class="tool-image">
+			@if (!string.IsNullOrEmpty(SelectedTool.Image))
+			{
+				<img src="@SelectedTool.Image" alt="tool Image" width="400" height="300" />
+			}
+		</div>
+		<div class= "tool-info">
+			<h2>@SelectedTool.Name</h2>
+			<p>@SelectedTool.Description</p>
+			<h5><span class="badge bg-secondary">Price: @SelectedTool.Price</span></h5>
+		</div>
+	</div>
+}
+
+@code {
+	[Parameter]
+	public Tool? SelectedTool { get; set; }
+}

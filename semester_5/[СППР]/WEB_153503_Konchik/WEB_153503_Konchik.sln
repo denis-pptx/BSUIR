@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik", "WEB_153503_Konchik.csproj", "{63018884-B32E-42C3-83A2-40A6A374E222}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik.Domain", "..\WEB_153503_Konchik.Domain\WEB_153503_Konchik.Domain.csproj", "{2D434717-4056-42C8-998A-47D49D2850BC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik.API", "..\WEB_153503_Konchik.API\WEB_153503_Konchik.API.csproj", "{905E754C-A55C-4B39-A7DE-EE75C1189084}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik.IdentityServer", "..\WEB_153503_Konchik.IdentityServer\WEB_153503_Konchik.IdentityServer.csproj", "{8DDB44C6-B93A-4431-8026-EF26324754B9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik.Tests", "..\WEB_153503_Konchik.Tests\WEB_153503_Konchik.Tests.csproj", "{E2AB76B5-842C-46AD-9D75-5B308D18CEAA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WEB_153503_Konchik.Blazor", "..\WEB_153503_Konchik.Blazor\WEB_153503_Konchik.Blazor.csproj", "{B7A81801-A8B9-4EAC-AC19-64336C713363}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63018884-B32E-42C3-83A2-40A6A374E222}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63018884-B32E-42C3-83A2-40A6A374E222}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63018884-B32E-42C3-83A2-40A6A374E222}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63018884-B32E-42C3-83A2-40A6A374E222}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D434717-4056-42C8-998A-47D49D2850BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D434717-4056-42C8-998A-47D49D2850BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D434717-4056-42C8-998A-47D49D2850BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D434717-4056-42C8-998A-47D49D2850BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905E754C-A55C-4B39-A7DE-EE75C1189084}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905E754C-A55C-4B39-A7DE-EE75C1189084}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905E754C-A55C-4B39-A7DE-EE75C1189084}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905E754C-A55C-4B39-A7DE-EE75C1189084}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DDB44C6-B93A-4431-8026-EF26324754B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDB44C6-B93A-4431-8026-EF26324754B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDB44C6-B93A-4431-8026-EF26324754B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDB44C6-B93A-4431-8026-EF26324754B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2AB76B5-842C-46AD-9D75-5B308D18CEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2AB76B5-842C-46AD-9D75-5B308D18CEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2AB76B5-842C-46AD-9D75-5B308D18CEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2AB76B5-842C-46AD-9D75-5B308D18CEAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7A81801-A8B9-4EAC-AC19-64336C713363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7A81801-A8B9-4EAC-AC19-64336C713363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7A81801-A8B9-4EAC-AC19-64336C713363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7A81801-A8B9-4EAC-AC19-64336C713363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD88D4A9-279C-442E-B6FB-57D86A1CA828}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,35 @@
+﻿<div class="form-floating">
+    <select class="form-select" style="width:auto;" id="floatingSelect" @onchange=" CategoryHasChanged">
+        <option value="">Все</option>
+        @if (DataService?.Categories is not null)
+        {
+            @foreach (var category in DataService.Categories!)
+            {
+                <option value="@category.NormalizedName">@category.Name</option>
+            }
+        }
+    </select>
+    <label for="floatingSelect">Категория</label>
+</div>
+
+@code {
+    [Inject]
+    public IDataService DataService { get; set; }
+
+    [Inject]
+    public NavigationManager NavigationManager { get; set; }
+
+    [Parameter]
+    public string? SelectedCategory { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DataService.GetCategoryListAsync();
+    }
+
+    private void CategoryHasChanged(ChangeEventArgs e)
+    {
+        SelectedCategory = e.Value?.ToString();
+        NavigationManager.NavigateTo($"tools/{SelectedCategory}");
+    }
+}
