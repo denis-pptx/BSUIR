@@ -1,0 +1,212 @@
+id1 id2;
+
+id3 id4
+{
+    id5 id6
+    {
+        id7 id8 id9(id10[] id11)
+        {
+            
+            id12 id13 = id14;  
+
+            id15 id16 = id17;
+            id16 = id18;
+            id16 = id19;    
+
+	        id20 id21 = id22;
+	        id20 id21 = id23;
+
+            id24 id25 = id26;
+            id25 = id27;
+	    
+            id28 id29 = id30;
+            id29 = id31;
+	    
+            id32 id33 = id34;
+            id32 id35 = id34;
+            id32 id36 = id37;
+            id32 id36 = id38;
+            id32 id39 = id32(id40);
+
+            id10 id41 = id42;
+            id10 id43 = id44;
+
+
+            id45 id46 = id47;
+            id46 = id48;
+
+            id49.id50(id46);
+            
+            id51 id52 = id53;
+
+            
+            id54<id20> id55 = id56 id54<id20>();
+
+            id55.id57(id58);
+            id55.id57(id59);
+            id49.id50(id60 id61);
+            id62 (id12 id63 id64 id55)
+            {
+                id49.id65(id63);
+            }
+
+            id66<id20> id67 = id56 id66<id20>();
+
+            id67.id68(id58);
+            id67.id68(id59);
+
+            id20 id69 = id67.id70();
+            id49.id50(id71  + id69);
+
+            id20 id72 = id67.id73();
+            id49.id50(id74  + id72);
+
+            id75<id20> id76 = id56 id75<id20>();
+
+            id76.id77(id58);
+            id76.id77(id59);
+            id76.id77(id78);
+
+            id20 id79 = id76.id70();
+            id49.id50(id80  + id79);
+
+            id20 id81 = id76.id82();
+            id49.id50(id83  + id84);
+
+            id20[] id85 = { id58, id59, id78, id86, id87 };
+
+            id88<id10, id20> id89 = id56 id88<id10, id20>();
+            id89[id90] = id78;
+
+            id20 id91 = id92;
+    
+            id93 (id91 <= id94)
+            {
+                id91++;
+            }
+
+            id95 
+            {
+                id91++;
+            } 
+            id93 (id91 <= id96);
+
+            id97 (id20 id98 = id92; id98 <= id94; id98--)
+            {
+                id98++;
+            }
+            id99 id100 id101
+            {
+                id99 id20 id102;
+
+                id99 id101(id20 id103)
+                {
+                    id102 = id103;
+                }
+            }
+
+            id104 = id104 - id105;
+            id104 = id104 / id105;
+            id104 = id104 * id105;
+            id104 = id104 % id105;
+            id104 = id104 - id105;
+            ++id104;
+            --id104;
+
+            id104 = id104 && id104;
+            id104 = id104 || id104;
+            id104 = id106 id107;
+            id104 = id104 == id104;
+            id104 = id104 != id104;
+            id104 = id104 >= id104;
+            id104 = id104 <= id104;
+            id104 = id104 < id104;
+            id104 = id104 > id104;
+
+
+            id104 += id104;
+            id104 -= id104;
+            id104 *= id104;
+            id104 /= id104;
+            id104 %= id104;
+            id104 &= id104;
+            id104 |= id104;
+            id104 ^= id104;
+            id104 = id104 & id104;
+            id104 = !id104;
+            id104 = id104 | id104;
+            id104 = id104 ^ id104;
+
+            id104 = id104 ~ id104;
+            id104 = id104 >> id94;
+            id104 = id104 << id94;
+
+            id108 (id104) {
+                id104++;
+            }
+            id109 id108 (id104) {
+                id104--;
+            }
+            id109 {
+                id104++;
+            }
+
+            id20 id110 = id105;
+            id10 id111;
+
+            id112 (id110)
+            {
+                id113 id114:
+                    id111 = id115;
+                    id116;
+                id113 id105:
+                    id111 = id117;
+                    id116;
+
+                id118:
+                    id111 = id119;
+                    id116;
+            }
+            id104 = id104 ? id120 : id121;
+            id54<id20> id55 = id56 id54<id20>();
+
+            id20 1vawriable = id94;
+            id24 $iNvalidIdentiefier = id122;
+            id20 id96 = id94;
+            id24 ^ = id122;
+            id20 %SomeText = id123;
+
+            PWD-;
+            PWD---;
+            PWD----;
+            PWD+;
+            PWD+++;
+            PWD++++;
+            ---PWD;
+            ----PWD;
+            +++PWD;
+            ++++PWD;
+
+            id20 id24 = id124;
+            id10 id10 = "id15 id10";
+
+            id32 str5 = 50853 > 353; 
+            id10 value = 8343 < 234 > 123 + 4553; 
+            id32 value = 8343 | 234 ~ 12353 ^ 4553 & 3222; 
+            id10 x4 = 553 + 353; 
+            id32 SomeChar = 12353  / 4534 + 653 - 453 - 1453 * 234234; 
+            id10 SomeChar = 253-253 * 253; 
+
+            id45 id121 = 234 + 324 - 3724 & 1112 ;
+            id45 id122 = 576 * 5234 % 543 | 1232;
+            id45 id123 = 1999 / 22110 ^ 1443;
+
+            id20 Htx = 12300 && 1201;
+            id15 Htx = 900 || 675758;
+            id28 Htx = 454 < 277;
+            id24 Htx = 481 > 99999;
+            id20 Htx = 1501 != 1501;
+        }
+    }
+}
+

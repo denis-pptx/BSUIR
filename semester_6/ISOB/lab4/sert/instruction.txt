@@ -1,0 +1,12 @@
+заходишь в терминале(терминал должен быть открыт от администратора) в папку
+C:\Program Files (x86)\Windows Kits\10\bin\10.0.22621.0\x64
+(можешь сначала открыть эту папку в проводнике и проверить есть ли там exe файлы makecert, pvk2pfx, signtool, возможно эти цифры "10.0.22621.0" будут отличатся нужно найти такую папку в которой есть нужные exeшники)
+дальше нужно выполнить команды 
+
+.\makecert -r -pe -n "CN=My Certificate Name" -b 01/01/2024 -e 01/01/2025 -eku 1.3.6.1.5.5.7.3.3 -ss my -sr localmachine -sky exchange -sp "Microsoft RSA SChannel Cryptographic Provider" -sy 12 "путь_куда_сохранить_открытый_ключ\OpenKey.cer"
+
+.\makecert -r -pe -n "CN=My Certificate Name" -b 01/01/2024 -e 01/01/2025 -eku 1.3.6.1.5.5.7.3.3 -ss my -sr localmachine -sky exchange -sp "Microsoft RSA SChannel Cryptographic Provider" -sy 12 "путь_куда_сохранили_открытый_ключ\OpenKey.cer" -sv "путь_куда_сохранить_закрытый_ключ\SecretKey.pvk" -a sha256
+
+.\pvk2pfx -pvk "путь_куда_сохранили_закрытый_ключ\SecretKey.pvk" -spc "путь_куда_сохранили_открытый_ключ\OpenKey.cer" -pfx "путь_куда_сохранить_сертификат\MyCertificate.pfx" -pi пароль_от_сертификата
+
+.\signtool sign /f путь_к_сертификату\MyCertificate.pfx /p пароль_от_сертификата /fd SHA256 путь к экзешнику_который_подписываем
