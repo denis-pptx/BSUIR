@@ -1,0 +1,19 @@
+version: '3.8'
+name: kursach
+
+services:
+  db:
+    image: postgres:latest
+    container_name: bus_aggregator_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: bus_aggregator
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+volumes:
+  db_data:
